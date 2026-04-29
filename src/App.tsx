@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -10,6 +10,8 @@ import ProjectsPage from './pages/Projects';
 import ContactPage from './pages/Contact';
 import DonatePage from './pages/Donate';
 import ScrollToTop from './components/ScrollToTop';
+import LoadingScreen from './components/LoadingScreen';
+import { AnimatePresence } from 'framer-motion';
 
 const HomePage: React.FC = () => {
   return (
@@ -21,10 +23,22 @@ const HomePage: React.FC = () => {
 };
 
 const App: React.FC = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <Router>
       <ScrollToTop />
-      <div className="flex flex-col min-h-screen bg-[#0A0A0A]">
+      <AnimatePresence>
+        {loading && <LoadingScreen />}
+      </AnimatePresence>
+      <div className={`flex flex-col min-h-screen bg-[#0A0A0A] transition-opacity duration-1000 ${loading ? 'opacity-0' : 'opacity-100'}`}>
         <Navbar />
         <main className="flex-grow">
           <Routes>

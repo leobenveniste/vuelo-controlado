@@ -32,10 +32,10 @@ const Navbar: React.FC = () => {
 
   return (
     <nav 
-      className={`fixed w-full z-50 transition-all duration-500 ${
+      className={`fixed w-full z-50 transition-all duration-500 py-4 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-xl border-b border-slate-200 py-3 shadow-lg' 
-          : 'bg-white py-4'
+          ? 'bg-white/95 backdrop-blur-xl border-b border-slate-200 shadow-lg' 
+          : 'bg-white'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
