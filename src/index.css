@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans bg-[#0A0A0A] text-slate-100 antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .btn-primary {
+    @apply bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  }
+  .btn-secondary {
+    @apply bg-secondary-600 text-white hover:bg-secondary-700 focus:ring-secondary-500;
+  }
+  .btn-outline {
+    @apply border-primary-600 text-primary-600 hover:bg-primary-50 focus:ring-primary-500;
+  }
+  .glass-card {
+    @apply bg-white bg-opacity-70 backdrop-blur-lg border border-white border-opacity-20 shadow-xl;
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-secondary-600;
+}
+
+.bg-hero-pattern {
+  background-color: #f8fafc;
+  background-image: radial-gradient(at 0% 0%, hsla(199, 89%, 48%, 0.15) 0px, transparent 50%),
+                    radial-gradient(at 100% 0%, hsla(291, 70%, 50%, 0.15) 0px, transparent 50%),
+                    radial-gradient(at 100% 100%, hsla(24, 95%, 53%, 0.15) 0px, transparent 50%),
+                    radial-gradient(at 0% 100%, hsla(199, 89%, 48%, 0.15) 0px, transparent 50%);
+}
