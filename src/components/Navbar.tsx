@@ -124,11 +124,11 @@ const Navbar: React.FC = () => {
               ))}
             </div>
 
-            <div className="pt-8 border-t border-slate-100">
+            <div className="pt-8 border-t border-slate-100 mt-auto">
                 <Link 
                   to="/donate" 
                   onClick={() => setIsMenuOpen(false)}
-                  className="block w-full bg-primary-500 text-[#0A0A0A] py-6 rounded-2xl text-xl font-black text-center uppercase tracking-widest shadow-xl shadow-primary-500/20"
+                  className="flex w-full items-center justify-center bg-primary-500 text-[#0A0A0A] py-6 rounded-2xl text-2xl font-black uppercase tracking-widest shadow-xl shadow-primary-500/20"
                 >
                   {t('nav.donate')}
                 </Link>
