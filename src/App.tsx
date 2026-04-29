@@ -12,6 +12,7 @@ import DonatePage from './pages/Donate';
 import ScrollToTop from './components/ScrollToTop';
 import LoadingScreen from './components/LoadingScreen';
 import { AnimatePresence } from 'framer-motion';
+import { ThemeProvider } from './context/ThemeContext';
 
 const HomePage: React.FC = () => {
   return (
@@ -39,26 +40,28 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <Router>
-      <ScrollToTop />
-      <AnimatePresence>
-        {loading && <LoadingScreen />}
-      </AnimatePresence>
-      <div className={`flex flex-col min-h-screen bg-brand-dark transition-opacity duration-1000 ${loading ? 'opacity-0' : 'opacity-100'}`}>
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/mission" element={<MissionPage />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/donate" element={<DonatePage />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </Router>
+    <ThemeProvider>
+      <Router>
+        <ScrollToTop />
+        <AnimatePresence>
+          {loading && <LoadingScreen />}
+        </AnimatePresence>
+        <div className={`flex flex-col min-h-screen bg-white dark:bg-brand-dark transition-opacity duration-1000 ${loading ? 'opacity-0' : 'opacity-100'}`}>
+          <Navbar />
+          <main className="flex-grow">
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<AboutPage />} />
+              <Route path="/mission" element={<MissionPage />} />
+              <Route path="/projects" element={<ProjectsPage />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/donate" element={<DonatePage />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 };
 

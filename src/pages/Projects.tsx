@@ -34,11 +34,11 @@ const ProjectsPage: React.FC = () => {
   ];
 
   return (
-    <div className="pt-32 pb-24 min-h-screen">
+    <div className="pt-32 pb-24 min-h-screen bg-white dark:bg-brand-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h1 className="text-5xl md:text-7xl font-display font-black text-white mb-6 tracking-tighter">{t('projects.title')}</h1>
-          <p className="text-xl text-slate-400 max-w-2xl mx-auto font-medium">
+          <h1 className="text-5xl md:text-7xl font-display font-black text-slate-900 dark:text-white mb-6 tracking-tighter">{t('projects.title')}</h1>
+          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-medium">
             {t('projects.subtitle')}
           </p>
         </div>
@@ -51,10 +51,10 @@ const ProjectsPage: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group bg-slate-900/50 rounded-[2.5rem] border border-slate-800 p-10 hover:border-primary-500/50 hover:bg-slate-900 transition-all duration-500"
+              className="group bg-slate-50 dark:bg-slate-900/50 rounded-[2.5rem] border border-slate-200 dark:border-slate-800 p-10 hover:border-primary-500/50 dark:hover:bg-slate-900 transition-all duration-500 shadow-sm dark:shadow-none"
             >
               <div className="flex justify-between items-start mb-8">
-                <div className="p-4 bg-slate-800 rounded-2xl text-primary-500 border border-slate-700">
+                <div className="p-4 bg-white dark:bg-slate-800 rounded-2xl text-primary-500 border border-slate-200 dark:border-slate-700 shadow-sm">
                   {project.icon}
                 </div>
               </div>
@@ -63,10 +63,10 @@ const ProjectsPage: React.FC = () => {
                 <span className="px-3 py-1 bg-primary-500/10 text-primary-500 rounded-full text-xs font-bold uppercase tracking-widest mb-4 inline-block">
                   {project.category}
                 </span>
-                <h3 className="text-3xl font-bold text-white mb-4">
+                <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
                   {project.title}
                 </h3>
-                <p className="text-lg text-slate-400 leading-relaxed font-medium">
+                <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
                   {project.desc}
                 </p>
               </div>

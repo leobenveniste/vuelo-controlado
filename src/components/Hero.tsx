@@ -8,10 +8,10 @@ const Hero: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-white dark:bg-brand-dark">
       {/* Decorative ambient light */}
-      <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-primary-500/10 rounded-full blur-[120px] animate-pulse" />
-      <div className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-primary-500/5 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] bg-primary-500/10 dark:bg-primary-500/10 rounded-full blur-[120px] animate-pulse" />
+      <div className="absolute bottom-1/4 -right-20 w-[500px] h-[500px] bg-primary-500/5 dark:bg-primary-500/5 rounded-full blur-[120px] animate-pulse" style={{ animationDelay: '2s' }} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-6xl md:text-8xl font-display font-black text-white leading-[0.9] mb-10 tracking-tighter"
+            className="text-6xl md:text-8xl font-display font-black text-slate-900 dark:text-white leading-[0.9] mb-10 tracking-tighter"
           >
             {t('hero.title').split(' ').map((word: string, i: number) => (
               <span key={i} className={['Riesgos', 'Cuidado', 'Risks', 'Care'].includes(word.replace(/[.,]/g, '')) ? 'text-primary-500' : ''}>
@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-xl md:text-2xl text-slate-400 mb-12 leading-relaxed max-w-3xl mx-auto font-medium"
+            className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 mb-12 leading-relaxed max-w-3xl mx-auto font-medium"
           >
             {t('hero.subtitle')}
           </motion.p>
@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
             </Link>
             <Link 
               to="/projects" 
-              className="btn border-2 border-slate-700 text-white hover:bg-slate-900 px-10 py-5 text-lg font-bold rounded-2xl group w-full sm:w-auto flex items-center justify-center"
+              className="btn border-2 border-slate-200 dark:border-slate-700 text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-900 px-10 py-5 text-lg font-bold rounded-2xl group w-full sm:w-auto flex items-center justify-center transition-colors"
             >
               <span>{t('hero.cta')}</span>
               <Icon icon="material-symbols:arrow-forward-rounded" width={24} className="ml-2 group-hover:translate-x-1 transition-transform" />
@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Infinity, duration: 2 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-slate-700"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 text-slate-400 dark:text-slate-700"
       >
         <Icon icon="material-symbols:keyboard-double-arrow-down-rounded" width={40} />
       </motion.div>

@@ -3,11 +3,14 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Icon } from '@iconify/react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useTheme } from '../context/ThemeContext';
+
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { t, i18n } = useTranslation();
+  const { theme, toggleTheme } = useTheme();
   const location = useLocation();
 
   useEffect(() => {
@@ -34,15 +37,19 @@ const Navbar: React.FC = () => {
     <nav 
       className={`fixed w-full z-50 transition-all duration-500 py-4 ${
         isScrolled 
-          ? 'bg-white/95 backdrop-blur-xl border-b border-slate-200 shadow-lg' 
-          : 'bg-white'
+          ? 'bg-brand-dark/95 dark:bg-white/95 backdrop-blur-xl border-b border-white/10 dark:border-slate-200 shadow-lg' 
+          : 'bg-brand-dark dark:bg-white'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center group">
             <div className="h-8 md:h-10 transform group-hover:scale-105 transition-transform">
-              <img src="/logo.png?v=1" alt="Fundación Vuelo Controlado" className="h-full w-auto object-contain" />
+              <img 
+                src={theme === 'dark' ? '/logo.png?v=1' : '/logo_blanco.png'} 
+                alt="Fundación Vuelo Controlado" 
+                className="h-full w-auto object-contain" 
+              />
             </div>
           </Link>
 
@@ -53,23 +60,49 @@ const Navbar: React.FC = () => {
                 key={link.path}
                 to={link.path}
                 className={`text-sm font-black uppercase tracking-widest transition-colors ${
-                  location.pathname === link.path ? 'text-primary-600' : 'text-slate-600 hover:text-primary-500'
+                  location.pathname === link.path 
+                    ? 'text-primary-500 dark:text-primary-600' 
+                    : 'text-slate-400 dark:text-slate-600 hover:text-primary-400 dark:hover:text-primary-500'
                 }`}
               >
                 {link.name}
               </Link>
             ))}
             
-            <button 
-              onClick={toggleLanguage}
-              className="flex items-center text-slate-600 hover:text-primary-500 transition-colors border-l border-slate-200 pl-6 group"
-            >
-              <Icon 
-                icon={i18n.language === 'en' ? 'circle-flags:us' : 'circle-flags:ar'} 
-                width={28} 
-                className="group-hover:scale-110 transition-transform"
-              />
-            </button>
+            <div className="flex items-center space-x-6 border-l border-white/10 dark:border-slate-200 pl-6">
+              <button 
+                onClick={toggleLanguage}
+                className="flex items-center text-slate-400 dark:text-slate-600 hover:text-primary-400 dark:hover:text-primary-500 transition-colors group"
+              >
+                <Icon 
+                  icon={i18n.language === 'en' ? 'circle-flags:us' : 'circle-flags:ar'} 
+                  width={24} 
+                  className="group-hover:scale-110 transition-transform"
+                />
+              </button>
+
+              <button 
+                onClick={toggleTheme}
+                className="text-slate-400 dark:text-slate-600 hover:text-primary-400 dark:hover:text-primary-500 transition-colors flex items-center text-2xl relative w-6 h-6"
+              >
+                <motion.div
+                  initial={false}
+                  animate={{ scale: theme === 'dark' ? 1 : 0, opacity: theme === 'dark' ? 1 : 0, rotate: theme === 'dark' ? 0 : 90 }}
+                  transition={{ duration: 0.5, type: 'spring' }}
+                  className="absolute inset-0"
+                >
+                  <Icon icon="material-symbols:dark-mode-outline" width={24} />
+                </motion.div>
+                <motion.div
+                  initial={false}
+                  animate={{ scale: theme === 'light' ? 1 : 0, opacity: theme === 'light' ? 1 : 0, rotate: theme === 'light' ? 0 : -90 }}
+                  transition={{ duration: 0.5, type: 'spring' }}
+                  className="absolute inset-0"
+                >
+                  <Icon icon="material-symbols:light-mode-outline" width={24} />
+                </motion.div>
+              </button>
+            </div>
 
             <Link 
               to="/donate" 
@@ -88,11 +121,28 @@ const Navbar: React.FC = () => {
                   icon={i18n.language === 'en' ? 'circle-flags:us' : 'circle-flags:ar'} 
                   width={20} 
                 />
-                <span className="text-slate-600 font-black uppercase text-xs">{i18n.language}</span>
+             </button>
+             <button onClick={toggleTheme} className="text-white dark:text-slate-900 flex items-center relative w-6 h-6">
+                <motion.div
+                  initial={false}
+                  animate={{ scale: theme === 'dark' ? 1 : 0, opacity: theme === 'dark' ? 1 : 0, rotate: theme === 'dark' ? 0 : 90 }}
+                  transition={{ duration: 0.5, type: 'spring' }}
+                  className="absolute inset-0"
+                >
+                  <Icon icon="material-symbols:dark-mode-outline" width={24} />
+                </motion.div>
+                <motion.div
+                  initial={false}
+                  animate={{ scale: theme === 'light' ? 1 : 0, opacity: theme === 'light' ? 1 : 0, rotate: theme === 'light' ? 0 : -90 }}
+                  transition={{ duration: 0.5, type: 'spring' }}
+                  className="absolute inset-0"
+                >
+                  <Icon icon="material-symbols:light-mode-outline" width={24} />
+                </motion.div>
              </button>
              <button 
               onClick={() => setIsMenuOpen(true)}
-              className="text-slate-900"
+              className="text-white dark:text-slate-900"
             >
               <Icon icon="material-symbols:menu-rounded" width={32} />
             </button>
@@ -107,13 +157,17 @@ const Navbar: React.FC = () => {
             initial={{ opacity: 0, x: '100%' }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: '100%' }}
-            className="fixed inset-0 bg-white z-[60] flex flex-col p-8"
+            className="fixed inset-0 bg-brand-dark dark:bg-white z-[60] flex flex-col p-8"
           >
             <div className="flex justify-between items-center mb-12">
                <div className="flex items-center">
-                 <img src="/logo.png?v=1" alt="Logo" className="h-10 w-auto object-contain" />
+                 <img 
+                   src={theme === 'dark' ? '/logo.png?v=1' : '/logo_blanco.png'} 
+                   alt="Logo" 
+                   className="h-10 w-auto object-contain" 
+                 />
                </div>
-               <button onClick={() => setIsMenuOpen(false)} className="text-slate-900">
+               <button onClick={() => setIsMenuOpen(false)} className="text-white dark:text-slate-900">
                  <Icon icon="material-symbols:close-rounded" width={40} />
                </button>
             </div>
@@ -124,14 +178,14 @@ const Navbar: React.FC = () => {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-4xl font-black uppercase tracking-tighter text-slate-900 hover:text-primary-600 transition-colors"
+                  className="text-4xl font-black uppercase tracking-tighter text-white dark:text-slate-900 hover:text-primary-400 dark:hover:text-primary-600 transition-colors"
                 >
                   {link.name}
                 </Link>
               ))}
             </div>
 
-            <div className="pt-8 border-t border-slate-100 mt-auto">
+            <div className="pt-8 border-t border-white/10 dark:border-slate-100 mt-auto">
                 <Link 
                   to="/donate" 
                   onClick={() => setIsMenuOpen(false)}
