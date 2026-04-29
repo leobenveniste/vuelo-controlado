@@ -62,14 +62,13 @@ const Navbar: React.FC = () => {
             
             <button 
               onClick={toggleLanguage}
-              className="flex items-center space-x-2 text-slate-600 hover:text-primary-500 transition-colors border-l border-slate-200 pl-6 group"
+              className="flex items-center text-slate-600 hover:text-primary-500 transition-colors border-l border-slate-200 pl-6 group"
             >
               <Icon 
                 icon={i18n.language === 'en' ? 'circle-flags:us' : 'circle-flags:ar'} 
-                width={24} 
+                width={28} 
                 className="group-hover:scale-110 transition-transform"
               />
-              <span className="text-xs font-black uppercase tracking-widest">{i18n.language}</span>
             </button>
 
             <Link 
@@ -84,7 +83,7 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-4">
-             <button onClick={toggleLanguage} className="flex items-center space-x-2">
+             <button onClick={toggleLanguage} className="flex items-center">
                 <Icon 
                   icon={i18n.language === 'en' ? 'circle-flags:us' : 'circle-flags:ar'} 
                   width={20} 
