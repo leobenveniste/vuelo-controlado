@@ -153,7 +153,7 @@ i18n
             btn: 'Donate ${{amount}} Now',
             secure: 'Secure Payment',
             impact: 'Instant Impact',
-            tax: 'Tax Deductible'
+            transparency: 'Transparency'
           },
           footer: {
             rights: 'All rights reserved.',
@@ -312,7 +312,7 @@ i18n
             btn: 'Donar ${{amount}} ahora',
             secure: 'Pago Seguro',
             impact: 'Impacto Inmediato',
-            tax: 'Deducible de Impuestos'
+            transparency: 'Transparencia'
           },
           footer: {
             rights: 'Todos los derechos reservados.',
