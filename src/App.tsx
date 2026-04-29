@@ -8,7 +8,6 @@ import AboutPage from './pages/About';
 import MissionPage from './pages/Mission';
 import ProjectsPage from './pages/Projects';
 import ContactPage from './pages/Contact';
-import DonatePage from './pages/Donate';
 import ScrollToTop from './components/ScrollToTop';
 import LoadingScreen from './components/LoadingScreen';
 import { AnimatePresence } from 'framer-motion';
@@ -27,7 +26,6 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const handleLoad = () => {
-      // Small delay just to let the animation breathe a bit
       setTimeout(() => setLoading(false), 500);
     };
 
@@ -54,7 +52,6 @@ const App: React.FC = () => {
             <Route path="/mission" element={<MissionPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/donate" element={<DonatePage />} />
           </Routes>
         </main>
         <Footer />
