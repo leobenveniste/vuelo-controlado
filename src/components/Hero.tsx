@@ -6,7 +6,6 @@ import { Icon } from '@iconify/react';
 
 const Hero: React.FC = () => {
   const { t } = useTranslation();
-  const DONATE_URL = "https://donaronline.org/fundacion-vuelo-controlado/comunidad-de-vuelo-la-fiesta-la-cuidamos-entre-todos?preview=true";
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
@@ -54,15 +53,13 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6"
           >
-            <a 
-              href={DONATE_URL} 
-              target="_blank" 
-              rel="noopener noreferrer"
+            <Link 
+              to="/donate" 
               className="btn bg-primary-500 text-[#0A0A0A] hover:bg-primary-400 px-10 py-5 text-lg font-bold rounded-2xl group w-full sm:w-auto transition-all shadow-[0_0_30px_rgba(0,255,0,0.2)] flex items-center justify-center"
             >
               <span>{t('hero.donate')}</span>
               <Icon icon="material-symbols:favorite-outline" width={24} className="ml-2 group-hover:scale-110 transition-transform" />
-            </a>
+            </Link>
             <Link 
               to="/projects" 
               className="btn border-2 border-slate-700 text-white hover:bg-slate-900 px-10 py-5 text-lg font-bold rounded-2xl group w-full sm:w-auto flex items-center justify-center"

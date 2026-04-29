@@ -10,8 +10,6 @@ const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
 
-  const DONATE_URL = "https://donaronline.org/fundacion-vuelo-controlado/comunidad-de-vuelo-la-fiesta-la-cuidamos-entre-todos?preview=true";
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
@@ -70,14 +68,14 @@ const Navbar: React.FC = () => {
               <span className="text-xs font-black uppercase">{i18n.language}</span>
             </button>
 
-            <a 
-              href={DONATE_URL} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-primary-500 text-[#0A0A0A] hover:bg-primary-400 px-6 py-2.5 rounded-xl text-sm font-black uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(0,255,0,0.15)]"
+            <Link 
+              to="/donate" 
+              className={`bg-primary-500 text-[#0A0A0A] hover:bg-primary-400 px-6 py-2.5 rounded-xl text-sm font-black uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(0,255,0,0.15)] ${
+                location.pathname === '/donate' ? 'ring-2 ring-primary-500 ring-offset-2' : ''
+              }`}
             >
               {t('nav.donate')}
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -127,15 +125,13 @@ const Navbar: React.FC = () => {
             </div>
 
             <div className="pt-8 border-t border-slate-100">
-                <a 
-                  href={DONATE_URL} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <Link 
+                  to="/donate" 
                   onClick={() => setIsMenuOpen(false)}
                   className="w-full bg-primary-500 text-[#0A0A0A] py-6 rounded-2xl text-2xl font-black text-center uppercase"
                 >
                   {t('nav.donate')}
-                </a>
+                </Link>
             </div>
           </motion.div>
         )}
