@@ -12,17 +12,17 @@ const MissionPage: React.FC = () => {
     {
       title: t('mission.pillars.judgment.title'),
       desc: t('mission.pillars.judgment.desc'),
-      icon: <ShieldCheck className="text-primary-500" size={40} />
+      icon: <ShieldCheck className="text-primary-500" size={64} />
     },
     {
       title: t('mission.pillars.empathy.title'),
       desc: t('mission.pillars.empathy.desc'),
-      icon: <HeartHandshake className="text-primary-500" size={40} />
+      icon: <HeartHandshake className="text-primary-500" size={64} />
     },
     {
       title: t('mission.pillars.info.title'),
       desc: t('mission.pillars.info.desc'),
-      icon: <Info className="text-primary-500" size={40} />
+      icon: <Info className="text-primary-500" size={64} />
     }
   ];
 
@@ -81,17 +81,19 @@ const MissionPage: React.FC = () => {
             {values.map((value, i) => (
               <motion.div 
                 key={i}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="text-center space-y-6 bg-white dark:bg-slate-900 p-10 rounded-[2.5rem] border border-slate-200 dark:border-slate-800 hover:border-primary-500/50 transition-all shadow-sm dark:shadow-none"
+                className="p-10 rounded-[2.5rem] border border-slate-100 dark:border-white/5 bg-slate-50 dark:bg-white/5 hover:bg-slate-100 dark:hover:bg-white/10 hover:border-primary-500/20 transition-all duration-500 group text-center shadow-sm dark:shadow-none"
               >
-                <div className="inline-flex items-center justify-center w-20 h-20 bg-slate-100 dark:bg-slate-800 rounded-2xl mb-2">
-                  {value.icon}
+                <div className="mb-10 flex justify-center">
+                  <div className="text-primary-500 group-hover:scale-110 transition-transform duration-500">
+                    {value.icon}
+                  </div>
                 </div>
-                <h3 className="text-2xl font-bold text-slate-900 dark:text-white">{value.title}</h3>
-                <p className="text-slate-600 dark:text-slate-400 leading-relaxed">{value.desc}</p>
+                <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-4 tracking-tight leading-tight">{value.title}</h3>
+                <p className="text-slate-600 dark:text-slate-400 leading-relaxed font-medium">{value.desc}</p>
               </motion.div>
             ))}
           </div>

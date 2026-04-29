@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
           : 'bg-brand-dark dark:bg-white'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-8 lg:px-12">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center group">
             <div className="h-8 md:h-10 transform group-hover:scale-105 transition-transform">

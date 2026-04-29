@@ -8,11 +8,15 @@ const ContactPage: React.FC = () => {
   return (
     <div className="pt-32 pb-24 min-h-screen text-slate-900 dark:text-slate-100 bg-white dark:bg-brand-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-20">
-          <h1 className="text-5xl md:text-7xl font-display font-black text-slate-900 dark:text-white mb-6 tracking-tighter">{t('contact.title')}</h1>
-          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-medium">
-            {t('contact.subtitle')}
-          </p>
+        <div className="text-left mb-20">
+          <span className="text-primary-500 font-bold uppercase tracking-[0.3em] text-sm mb-6 block">{t('contact.title')}</span>
+          <h1 className="text-4xl md:text-6xl font-display font-black text-slate-900 dark:text-white mb-6 tracking-tighter leading-none max-w-5xl">
+            {t('contact.subtitle').split(' ').map((word, i) => (
+              <span key={i} className={['evento', 'voluntario', 'event', 'volunteer'].includes(word.replace(/[.,¿?]/g, '').toLowerCase()) ? 'text-primary-500' : ''}>
+                {word}{' '}
+              </span>
+            ))}
+          </h1>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
