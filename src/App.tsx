@@ -44,7 +44,7 @@ const App: React.FC = () => {
       <AnimatePresence>
         {loading && <LoadingScreen />}
       </AnimatePresence>
-      <div className={`flex flex-col min-h-screen bg-[#0A0A0A] transition-opacity duration-1000 ${loading ? 'opacity-0' : 'opacity-100'}`}>
+      <div className={`flex flex-col min-h-screen bg-brand-dark transition-opacity duration-1000 ${loading ? 'opacity-0' : 'opacity-100'}`}>
         <Navbar />
         <main className="flex-grow">
           <Routes>

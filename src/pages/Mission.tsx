@@ -48,7 +48,7 @@ const MissionPage: React.FC = () => {
                 <Droplets size={48} className="text-primary-500 mb-4" />
                 <p className="text-center font-bold">{t('mission.stats.hydration')}</p>
               </div>
-              <div className="p-8 bg-primary-600 text-[#0A0A0A] rounded-3xl">
+              <div className="p-8 bg-primary-600 text-brand-dark rounded-3xl">
                 <p className="text-3xl font-display font-bold">2018</p>
                 <p className="text-sm opacity-80 uppercase font-bold tracking-widest">{t('mission.stats.founded')}</p>
               </div>
@@ -98,7 +98,7 @@ const MissionPage: React.FC = () => {
 
       {/* Methodology */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div className="bg-gradient-to-br from-slate-900 to-[#0A0A0A] rounded-[3rem] p-12 md:p-20 text-white border border-slate-800 flex flex-col md:flex-row items-center gap-12">
+        <div className="bg-gradient-to-br from-slate-900 to-brand-dark rounded-[3rem] p-12 md:p-20 text-white border border-slate-800 flex flex-col md:flex-row items-center gap-12">
           <div className="md:w-1/2">
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">{t('mission.methodology.title')}</h2>
             <p className="text-slate-400 text-lg mb-8">

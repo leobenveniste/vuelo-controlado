@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
 
             <Link 
               to="/donate" 
-              className={`bg-primary-500 text-[#0A0A0A] hover:bg-primary-400 px-6 py-2.5 rounded-xl text-sm font-black uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(0,255,0,0.15)] ${
+              className={`bg-primary-500 text-brand-dark hover:bg-primary-400 px-6 py-2.5 rounded-xl text-sm font-black uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(0,255,0,0.15)] ${
                 location.pathname === '/donate' ? 'ring-2 ring-primary-500 ring-offset-2' : ''
               }`}
             >
@@ -135,7 +135,7 @@ const Navbar: React.FC = () => {
                 <Link 
                   to="/donate" 
                   onClick={() => setIsMenuOpen(false)}
-                  className="flex w-full items-center justify-center bg-primary-500 text-[#0A0A0A] py-6 rounded-2xl text-2xl font-black uppercase tracking-widest shadow-xl shadow-primary-500/20"
+                  className="flex w-full items-center justify-center bg-primary-500 text-brand-dark py-6 rounded-2xl text-2xl font-black uppercase tracking-widest shadow-xl shadow-primary-500/20"
                 >
                   {t('nav.donate')}
                 </Link>

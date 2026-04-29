@@ -57,7 +57,7 @@ const ContactPage: React.FC = () => {
                   <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-3">{t('contact.form.name')}</label>
                   <input 
                     type="text" 
-                    className="w-full bg-[#0A0A0A] border border-white/10 rounded-xl px-5 py-4 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-white font-bold"
+                    className="w-full bg-brand-dark border border-white/10 rounded-xl px-5 py-4 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-white font-bold"
                     placeholder={t('contact.form.placeholderName')}
                   />
                 </div>
@@ -65,7 +65,7 @@ const ContactPage: React.FC = () => {
                   <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-3">{t('contact.form.email')}</label>
                   <input 
                     type="email" 
-                    className="w-full bg-[#0A0A0A] border border-white/10 rounded-xl px-5 py-4 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-white font-bold"
+                    className="w-full bg-brand-dark border border-white/10 rounded-xl px-5 py-4 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-white font-bold"
                     placeholder={t('contact.form.placeholderEmail')}
                   />
                 </div>
@@ -74,11 +74,11 @@ const ContactPage: React.FC = () => {
                 <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-3">{t('contact.form.msg')}</label>
                 <textarea 
                   rows={5} 
-                  className="w-full bg-[#0A0A0A] border border-white/10 rounded-xl px-5 py-4 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-white font-bold"
+                  className="w-full bg-brand-dark border border-white/10 rounded-xl px-5 py-4 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-white font-bold"
                   placeholder={t('contact.form.placeholderMsg')}
                 ></textarea>
               </div>
-              <button type="submit" className="w-full bg-primary-500 text-[#0A0A0A] py-6 rounded-2xl font-black uppercase tracking-[0.2em] group transition-all hover:bg-primary-400 hover:shadow-[0_0_30px_rgba(0,255,0,0.2)]">
+              <button type="submit" className="w-full bg-primary-500 text-brand-dark py-6 rounded-2xl font-black uppercase tracking-[0.2em] group transition-all hover:bg-primary-400 hover:shadow-[0_0_30px_rgba(0,255,0,0.2)]">
                 <span className="flex items-center justify-center">
                   {t('contact.form.submit')}
                   <Icon icon="material-symbols:send-outline" width={24} className="ml-3 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />

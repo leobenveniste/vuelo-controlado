@@ -24,6 +24,7 @@ export default {
           green: '#00FF00',
           dark: '#0A0A0A',
         },
+        'brand-dark': '#0A0A0A',
         secondary: {
           50: '#fdf4ff',
           100: '#fae8ff',

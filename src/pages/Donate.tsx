@@ -26,7 +26,7 @@ const DonatePage: React.FC = () => {
 
         <div className="bg-white rounded-[3rem] overflow-hidden shadow-2xl shadow-primary-500/10 border border-white/10 min-h-[800px] relative">
            {/* Loader for the iframe */}
-           <div className="absolute inset-0 flex items-center justify-center bg-[#0A0A0A] -z-10">
+           <div className="absolute inset-0 flex items-center justify-center bg-brand-dark -z-10">
               <div className="loader"></div>
            </div>
            

@@ -55,7 +55,7 @@ const Hero: React.FC = () => {
           >
             <Link 
               to="/donate" 
-              className="btn bg-primary-500 text-[#0A0A0A] hover:bg-primary-400 px-10 py-5 text-lg font-bold rounded-2xl group w-full sm:w-auto transition-all shadow-[0_0_30px_rgba(0,255,0,0.2)] flex items-center justify-center"
+              className="btn bg-primary-500 text-brand-dark hover:bg-primary-400 px-10 py-5 text-lg font-bold rounded-2xl group w-full sm:w-auto transition-all shadow-[0_0_30px_rgba(0,255,0,0.2)] flex items-center justify-center"
             >
               <span>{t('hero.donate')}</span>
               <Icon icon="material-symbols:favorite-outline" width={24} className="ml-2 group-hover:scale-110 transition-transform" />
