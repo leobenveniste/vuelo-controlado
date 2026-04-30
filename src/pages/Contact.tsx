@@ -33,15 +33,16 @@ const ContactPage: React.FC = () => {
   return (
     <div className="pt-32 pb-24 min-h-screen text-slate-900 dark:text-slate-100 bg-white dark:bg-brand-dark">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-20 items-start">
-          {/* Left Column: Shorter Title & Info */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+          
+          {/* Left Column: Title & Info */}
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="lg:w-5/12"
+            className="lg:col-span-5 lg:sticky lg:top-40"
           >
-            <div className="text-left mb-12">
+            <div className="text-left mb-16">
               <span className="text-primary-500 font-bold uppercase tracking-[0.3em] text-sm mb-6 block">Hablemos</span>
               <h1 className="text-5xl md:text-8xl font-display font-black text-slate-900 dark:text-white mb-8 tracking-tighter leading-none">
                 {t('contact.title').split(' ').map((word, i) => (
@@ -50,52 +51,83 @@ const ContactPage: React.FC = () => {
                   </span>
                 ))}
               </h1>
-              <p className="text-xl text-slate-600 dark:text-slate-400 font-medium leading-relaxed max-w-md">
-                {t('contact.subtitle')}
-              </p>
             </div>
 
             <div className="space-y-8">
-              <div className="flex items-start space-x-6 group">
-                <div className="w-14 h-14 rounded-2xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/5 flex items-center justify-center text-primary-500 group-hover:bg-primary-500/10 group-hover:scale-110 transition-all duration-500 shadow-sm">
+              <div className="flex items-center space-x-6 group cursor-pointer">
+                <div className="w-14 h-14 rounded-2xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/5 flex items-center justify-center text-primary-500 group-hover:bg-primary-500 group-hover:text-brand-dark transition-all duration-300 shadow-sm">
                   <Icon icon="material-symbols:mail-outline" width={28} />
                 </div>
                 <div>
-                  <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 mb-1">Prensa</h3>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">Prensa</p>
                   <a href="mailto:prensa@vuelocontrolado.org" className="text-lg font-bold text-slate-900 dark:text-white hover:text-primary-500 transition-colors">prensa@vuelocontrolado.org</a>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-6 group">
-                <div className="w-14 h-14 rounded-2xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/5 flex items-center justify-center text-primary-500 group-hover:bg-primary-500/10 group-hover:scale-110 transition-all duration-500 shadow-sm">
+              <div className="flex items-center space-x-6 group cursor-pointer">
+                <div className="w-14 h-14 rounded-2xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/5 flex items-center justify-center text-primary-500 group-hover:bg-primary-500 group-hover:text-brand-dark transition-all duration-300 shadow-sm">
                   <Icon icon="material-symbols:mail-outline" width={28} />
                 </div>
                 <div>
-                  <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 mb-1">Recursos Humanos</h3>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">RRHH</p>
                   <a href="mailto:rrhh@vuelocontrolado.org" className="text-lg font-bold text-slate-900 dark:text-white hover:text-primary-500 transition-colors">rrhh@vuelocontrolado.org</a>
                 </div>
               </div>
 
-              <div className="flex items-start space-x-6 group">
-                <div className="w-14 h-14 rounded-2xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/5 flex items-center justify-center text-primary-500 group-hover:bg-primary-500/10 group-hover:scale-110 transition-all duration-500 shadow-sm">
+              <div className="flex items-center space-x-6 group cursor-pointer">
+                <div className="w-14 h-14 rounded-2xl bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/5 flex items-center justify-center text-primary-500 group-hover:bg-primary-500 group-hover:text-brand-dark transition-all duration-300 shadow-sm">
                   <Icon icon="mdi:instagram" width={28} />
                 </div>
                 <div>
-                  <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 mb-1">Instagram</h3>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">Instagram</p>
                   <a href="https://www.instagram.com/vuelocontrolado" target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-slate-900 dark:text-white hover:text-primary-500 transition-colors">@vuelocontrolado</a>
                 </div>
               </div>
             </div>
           </motion.div>
 
-          {/* Right Column: Form */}
-          <motion.div 
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="lg:w-7/12 w-full"
-          >
-            <div className="bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-[3rem] p-8 md:p-12 shadow-2xl shadow-primary-500/5 dark:shadow-none relative overflow-hidden">
+          {/* Right Column: Stacked Cards */}
+          <div className="lg:col-span-7 space-y-12">
+            {/* Events & Schools Card */}
+            <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-[3rem] p-10 md:p-14"
+            >
+              <div className="flex items-center gap-6 mb-8">
+                <div className="w-14 h-14 rounded-2xl bg-primary-500/10 flex items-center justify-center text-primary-500 shrink-0">
+                  <Icon icon="material-symbols:event-available-outline" width={32} />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">Eventos y Escuelas</h2>
+              </div>
+              <p className="text-xl text-slate-600 dark:text-slate-400 font-medium leading-relaxed mb-10">
+                ¿Querés que Vuelo Controlado esté en tu evento o brinde una charla en tu escuela? Llevamos nuestros dispositivos de reducción de riesgos e información profesional a donde más se necesita.
+              </p>
+              <a 
+                href="mailto:produccion@vuelocontrolado.org" 
+                className="inline-flex items-center space-x-4 text-primary-500 font-black uppercase tracking-widest text-base group"
+              >
+                <span>Contactar a Producción</span>
+                <Icon icon="material-symbols:arrow-right-alt-rounded" width={28} className="group-hover:translate-x-2 transition-transform" />
+              </a>
+            </motion.div>
+
+            {/* Volunteer Form Card */}
+            <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-[3rem] p-10 md:p-14 relative overflow-hidden"
+            >
+              <div className="flex items-center gap-6 mb-8">
+                <div className="w-14 h-14 rounded-2xl bg-primary-500/10 flex items-center justify-center text-primary-500 shrink-0">
+                  <Icon icon="material-symbols:volunteer-activism-outline" width={32} />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">Sumate</h2>
+              </div>
+              <p className="text-lg text-slate-600 dark:text-slate-400 font-medium mb-10">Completá el formulario para sumarte como voluntario.</p>
+
               <AnimatePresence mode="wait">
                 {status === 'success' ? (
                   <motion.div 
@@ -103,19 +135,19 @@ const ContactPage: React.FC = () => {
                     initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
                     exit={{ opacity: 0, scale: 0.9 }}
-                    className="h-full flex flex-col items-center justify-center text-center py-20"
+                    className="flex flex-col items-center justify-center text-center py-10"
                   >
                     <div className="w-20 h-20 bg-primary-500/10 rounded-full flex items-center justify-center text-primary-500 mb-6">
                       <Icon icon="material-symbols:check-circle-outline" width={48} />
                     </div>
-                    <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">¡Mensaje enviado!</h3>
-                    <p className="text-xl text-slate-600 dark:text-slate-400 font-medium">Gracias por contactarnos. Te responderemos a la brevedad.</p>
+                    <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">¡Solicitud enviada!</h3>
+                    <p className="text-lg text-slate-600 dark:text-slate-400 font-medium">Te responderemos pronto.</p>
                   </motion.div>
                 ) : (
                   <motion.form 
                     key="form"
                     onSubmit={handleSubmit} 
-                    className="space-y-8"
+                    className="space-y-6"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
@@ -127,7 +159,7 @@ const ContactPage: React.FC = () => {
                           required
                           name="nombre"
                           type="text" 
-                          className="w-full bg-white dark:bg-brand-dark border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-5 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-slate-900 dark:text-white font-bold shadow-inner text-lg"
+                          className="w-full bg-white dark:bg-brand-dark border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-slate-900 dark:text-white font-bold shadow-inner"
                           placeholder={t('contact.form.placeholderName')}
                         />
                       </div>
@@ -137,7 +169,7 @@ const ContactPage: React.FC = () => {
                           required
                           name="email"
                           type="email" 
-                          className="w-full bg-white dark:bg-brand-dark border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-5 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-slate-900 dark:text-white font-bold shadow-inner text-lg"
+                          className="w-full bg-white dark:bg-brand-dark border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-slate-900 dark:text-white font-bold shadow-inner"
                           placeholder={t('contact.form.placeholderEmail')}
                         />
                       </div>
@@ -147,26 +179,23 @@ const ContactPage: React.FC = () => {
                       <textarea 
                         required
                         name="mensaje"
-                        rows={6} 
-                        className="w-full bg-white dark:bg-brand-dark border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-5 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-slate-900 dark:text-white font-bold shadow-inner text-lg"
-                        placeholder={t('contact.form.placeholderMsg')}
+                        rows={4} 
+                        className="w-full bg-white dark:bg-brand-dark border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-slate-900 dark:text-white font-bold shadow-inner"
+                        placeholder="¿Por qué te gustaría sumarte?"
                       ></textarea>
                     </div>
                     <button 
                       disabled={status === 'loading'}
                       type="submit" 
-                      className="w-full bg-primary-500 text-brand-dark py-7 rounded-2xl font-black uppercase tracking-[0.3em] group transition-all hover:bg-primary-400 hover:shadow-[0_0_40px_rgba(0,255,0,0.3)] disabled:opacity-50 disabled:cursor-not-allowed text-lg"
+                      className="w-full bg-primary-500 text-brand-dark py-6 rounded-2xl font-black uppercase tracking-[0.2em] group transition-all hover:bg-primary-400 disabled:opacity-50 text-lg shadow-xl shadow-primary-500/20"
                     >
-                      <span className="flex items-center justify-center">
-                        {status === 'loading' ? 'Enviando...' : t('contact.form.submit')}
-                        {status !== 'loading' && <Icon icon="material-symbols:send-outline" width={24} className="ml-3 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />}
-                      </span>
+                      <span>{status === 'loading' ? 'Enviando...' : 'Enviar Solicitud'}</span>
                     </button>
                   </motion.form>
                 )}
               </AnimatePresence>
-            </div>
-          </motion.div>
+            </motion.div>
+          </div>
         </div>
       </div>
     </div>
