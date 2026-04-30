@@ -186,7 +186,7 @@ const ContactPage: React.FC = () => {
                       </div>
                     </div>
                     <div>
-                      <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-3">{t('contact.form.msg')}</label>
+                      <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-3">{t('contact.form.message')}</label>
                       <textarea 
                         required
                         name="mensaje"

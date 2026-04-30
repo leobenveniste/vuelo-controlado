@@ -72,8 +72,8 @@ const QuotePage: React.FC = () => {
     setViewDate(new Date(viewDate.getFullYear(), viewDate.getMonth() + offset, 1));
   };
 
-  // Using a placeholder SCRIPT_URL, we can update it if needed.
-  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyAHgQ86aBpStodGwy0cl7WV3GVhiMJi2gPm6ETDO9C48yWTNuBqCJBL75pqlgfhZ0r/exec';
+  // Using the real SCRIPT_URL provided by the user.
+  const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbz3UTfaDSmVTnFfnCG0B-B_2MHByTG95y5xLx_HyFG__S2D7ZNpU3GqBBvgKyFEyg1M5g/exec';
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
