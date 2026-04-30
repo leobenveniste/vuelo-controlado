@@ -186,6 +186,16 @@ const ContactPage: React.FC = () => {
                       </div>
                     </div>
                     <div>
+                      <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-3">{t('contact.form.city')}</label>
+                      <input 
+                        required
+                        name="ciudad"
+                        type="text" 
+                        className="w-full bg-white dark:bg-brand-dark border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-slate-900 dark:text-white font-bold shadow-inner"
+                        placeholder={t('contact.form.placeholderCity')}
+                      />
+                    </div>
+                    <div>
                       <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-3">{t('contact.form.message')}</label>
                       <textarea 
                         required

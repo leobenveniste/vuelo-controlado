@@ -160,10 +160,12 @@ i18n
             form: {
               name: 'Name',
               email: 'Email',
+              city: 'City of Residence',
               message: 'Message',
               submit: 'Send Message',
               placeholderName: 'Your name',
               placeholderEmail: 'your@email.com',
+              placeholderCity: 'Mendoza, Argentina',
               placeholderMsg: 'Tell us about your inquiry...'
             }
           },
@@ -395,10 +397,12 @@ i18n
             form: {
               name: 'Nombre',
               email: 'Correo Electrónico',
+              city: 'Ciudad de Residencia',
               message: 'Mensaje',
               submit: 'Enviar Mensaje',
               placeholderName: 'Tu nombre',
               placeholderEmail: 'tu@email.com',
+              placeholderCity: 'Mendoza, Argentina',
               placeholderMsg: 'Contanos sobre tu consulta...'
             }
           },
