@@ -60,7 +60,7 @@ const DonatePage: React.FC = () => {
              src={DONATE_URL}
              width="100%" 
              height="1300px" 
-             style={{ marginTop: '-420px' }}
+             style={{ marginTop: '-600px' }}
              frameBorder="0" 
              allowTransparency={true}
              className="w-full relative z-10"

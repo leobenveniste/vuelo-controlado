@@ -30,11 +30,11 @@ const Mission: React.FC = () => {
   ];
 
   return (
-    <section className="py-24 bg-white dark:bg-brand-dark">
+    <section className="py-24 bg-brand-dark dark:bg-white transition-colors duration-500">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-display font-black text-slate-900 dark:text-white mb-6 tracking-tighter">{t('mission.title')}</h2>
-          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-medium">
+          <h2 className="text-4xl md:text-5xl font-display font-black text-white dark:text-slate-900 mb-6 tracking-tighter">{t('mission.title')}</h2>
+          <p className="text-xl text-slate-300 dark:text-slate-600 max-w-2xl mx-auto font-medium">
             {t('mission.description')}
           </p>
         </div>
@@ -47,7 +47,7 @@ const Mission: React.FC = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="p-10 rounded-[2.5rem] border border-slate-100 dark:border-white/5 bg-slate-50 dark:bg-white/5 hover:bg-slate-100 dark:hover:bg-white/10 hover:border-primary-500/20 transition-all duration-500 group text-center"
+              className="p-10 rounded-[2.5rem] border border-white/5 dark:border-slate-100 bg-white/5 dark:bg-slate-50 hover:bg-white/10 dark:hover:bg-slate-100 hover:border-primary-500/20 transition-all duration-500 group text-center"
             >
               <div className="mb-10 flex justify-center">
                 <Icon 
@@ -56,8 +56,8 @@ const Mission: React.FC = () => {
                   className="text-primary-500 group-hover:scale-110 transition-transform duration-500" 
                 />
               </div>
-              <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-4 tracking-tight leading-tight">{card.title}</h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed font-medium">
+              <h3 className="text-2xl font-black text-white dark:text-slate-900 mb-4 tracking-tight leading-tight">{card.title}</h3>
+              <p className="text-slate-300 dark:text-slate-600 leading-relaxed font-medium">
                 {card.description}
               </p>
             </motion.div>

@@ -64,7 +64,7 @@ const ProjectsPage: React.FC = () => {
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-primary-500/20 rounded-full blur-3xl animate-pulse" />
             <div className="relative z-10 rounded-[3rem] overflow-hidden border border-slate-200 dark:border-slate-800 shadow-2xl shadow-primary-500/10 aspect-[4/3] md:aspect-square">
               <img 
-                src="/impacto.jpeg" 
+                src="/impacto.jpg" 
                 alt="Impacto Vuelo Controlado" 
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />

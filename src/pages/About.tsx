@@ -108,6 +108,23 @@ const AboutPage: React.FC = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mt-32 text-center"
+        >
+          <div className="inline-block relative">
+            <div className="absolute inset-0 bg-primary-500/20 blur-[100px] rounded-full" />
+            <div className="relative z-10 px-12 py-16 rounded-[4rem] border border-slate-100 dark:border-white/5 bg-slate-50 dark:bg-white/5 shadow-2xl shadow-primary-500/10">
+              <p className="text-7xl md:text-9xl font-display font-black text-primary-500 mb-6 tracking-tighter">100+</p>
+              <p className="text-sm md:text-base font-bold text-slate-500 dark:text-slate-400 uppercase tracking-[0.4em]">
+                {t('about.stats.volunteers')}
+              </p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </div>
   );

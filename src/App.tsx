@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Mission from './components/Mission';
+import Methodology from './components/Methodology';
 import Footer from './components/Footer';
 import AboutPage from './pages/About';
 import MissionPage from './pages/Mission';
@@ -19,6 +20,7 @@ const HomePage: React.FC = () => {
     <>
       <Hero />
       <Mission />
+      <Methodology />
     </>
   );
 };

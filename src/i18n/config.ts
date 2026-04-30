@@ -83,7 +83,8 @@ i18n
             story2: 'Driven by psychologist Verónica Chrabolowsky, our organization brings together professionals from psychology, medicine, social work, and education to mitigate risks and promote self-care.',
             stats: {
               care: 'Non-punitive Care',
-              events: 'Cared Events'
+              events: 'Cared Events',
+              volunteers: 'Active Volunteers'
             },
             values: {
               health: 'Health',
@@ -242,7 +243,8 @@ i18n
             story2: 'Impulsada por la psicóloga Verónica Chrabolowsky, nuestra organización reúne a profesionales de la psicología, medicina, trabajo social y educación para mitigar riesgos y promover el autocuidado.',
             stats: {
               care: 'Cuidado No Punitivo',
-              events: 'Eventos Cuidados'
+              events: 'Eventos Cuidados',
+              volunteers: 'Voluntarios Activos'
             },
             values: {
               health: 'Salud',

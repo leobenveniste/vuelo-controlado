@@ -1,12 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { CheckCircle2, ShieldCheck, HeartHandshake, Droplets, Info, Users } from 'lucide-react';
-import { useTheme } from '../context/ThemeContext';
+import { ShieldCheck, HeartHandshake, Droplets, Info, Users } from 'lucide-react';
 
 const MissionPage: React.FC = () => {
   const { t } = useTranslation();
-  const { theme } = useTheme();
 
   const values = [
     {
@@ -70,10 +68,10 @@ const MissionPage: React.FC = () => {
       </section>
 
       {/* Core Values */}
-      <section className="bg-slate-50 dark:bg-slate-900/50 py-24 transition-colors">
+      <section className="bg-brand-dark dark:bg-white py-24 transition-colors duration-500">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-3xl font-display font-bold text-slate-900 dark:text-white">{t('mission.pillars.title')}</h2>
+            <h2 className="text-3xl font-display font-bold text-white dark:text-slate-900">{t('mission.pillars.title')}</h2>
             <div className="w-20 h-1 bg-primary-500 mx-auto mt-4 rounded-full" />
           </div>
 
@@ -85,50 +83,21 @@ const MissionPage: React.FC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="p-10 rounded-[2.5rem] border border-slate-100 dark:border-white/5 bg-slate-50 dark:bg-white/5 hover:bg-slate-100 dark:hover:bg-white/10 hover:border-primary-500/20 transition-all duration-500 group text-center shadow-sm dark:shadow-none"
+                className="p-10 rounded-[2.5rem] border border-white/5 dark:border-slate-100 bg-white/5 dark:bg-slate-50 hover:bg-white/10 dark:hover:bg-slate-100 hover:border-primary-500/20 transition-all duration-500 group text-center shadow-sm dark:shadow-none"
               >
                 <div className="mb-10 flex justify-center">
                   <div className="text-primary-500 group-hover:scale-110 transition-transform duration-500">
                     {value.icon}
                   </div>
                 </div>
-                <h3 className="text-2xl font-black text-slate-900 dark:text-white mb-4 tracking-tight leading-tight">{value.title}</h3>
-                <p className="text-slate-600 dark:text-slate-400 leading-relaxed font-medium">{value.desc}</p>
+                <h3 className="text-2xl font-black text-white dark:text-slate-900 mb-4 tracking-tight leading-tight">{value.title}</h3>
+                <p className="text-slate-300 dark:text-slate-600 leading-relaxed font-medium">{value.desc}</p>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Methodology */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <div className="bg-gradient-to-br from-slate-100 to-white dark:from-slate-900 dark:to-brand-dark rounded-[3rem] p-12 md:p-20 text-slate-900 dark:text-white border border-slate-200 dark:border-slate-800 flex flex-col md:flex-row items-center gap-12 shadow-xl dark:shadow-none">
-          <div className="md:w-1/2">
-            <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">{t('mission.methodology.title')}</h2>
-            <p className="text-slate-600 dark:text-slate-400 text-lg mb-8">
-              {t('mission.methodology.subtitle')}
-            </p>
-            <div className="space-y-4">
-              {(t('mission.methodology.steps', { returnObjects: true }) as string[]).map((step, i) => (
-                <div key={i} className="flex items-center space-x-3">
-                  <CheckCircle2 className="text-primary-500 flex-shrink-0" />
-                  <span className="text-lg text-slate-700 dark:text-slate-300">{step}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="md:w-1/2">
-            <div className="aspect-video bg-white dark:bg-slate-800 rounded-2xl flex items-center justify-center border border-slate-200 dark:border-slate-700 overflow-hidden relative p-12 shadow-inner">
-               <div className="absolute inset-0 bg-primary-500/5 animate-pulse" />
-               <img 
-                 src={theme === 'dark' ? '/logo_blanco.png?v=1' : '/logo.png?v=1'} 
-                 alt="Logo" 
-                 className="w-full h-full object-contain relative z-10 opacity-30 dark:opacity-30 group-hover:opacity-100 transition-all duration-500" 
-               />
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
