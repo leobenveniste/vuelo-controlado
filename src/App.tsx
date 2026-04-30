@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Mission from './components/Mission';
@@ -10,6 +11,7 @@ import MissionPage from './pages/Mission';
 import ProjectsPage from './pages/Projects';
 import ContactPage from './pages/Contact';
 import DonatePage from './pages/Donate';
+import QuotePage from './pages/Quote';
 import ScrollToTop from './components/ScrollToTop';
 import LoadingScreen from './components/LoadingScreen';
 import { AnimatePresence } from 'framer-motion';
@@ -27,6 +29,11 @@ const HomePage: React.FC = () => {
 
 const App: React.FC = () => {
   const [loading, setLoading] = useState(true);
+  const { i18n } = useTranslation();
+  
+  useEffect(() => {
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language]);
 
   useEffect(() => {
     const handleLoad = () => {
@@ -58,6 +65,7 @@ const App: React.FC = () => {
               <Route path="/projects" element={<ProjectsPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/donate" element={<DonatePage />} />
+              <Route path="/quote" element={<QuotePage />} />
             </Routes>
           </main>
           <Footer />

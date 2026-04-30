@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -43,7 +44,7 @@ const ContactPage: React.FC = () => {
             className="lg:col-span-5 lg:sticky lg:top-40"
           >
             <div className="text-left mb-16">
-              <span className="text-primary-500 font-bold uppercase tracking-[0.3em] text-sm mb-6 block">Hablemos</span>
+              <span className="text-primary-500 font-bold uppercase tracking-[0.3em] text-sm mb-6 block">{t('contact.label')}</span>
               <h1 className="text-5xl md:text-8xl font-display font-black text-slate-900 dark:text-white mb-8 tracking-tighter leading-none">
                 {t('contact.title').split(' ').map((word, i) => (
                   <span key={i} className={['contacto', 'contact'].includes(word.toLowerCase().replace(/[.,]/g, '')) ? 'text-primary-500' : ''}>
@@ -59,7 +60,7 @@ const ContactPage: React.FC = () => {
                   <Icon icon="material-symbols:mail-outline" width={28} />
                 </div>
                 <div>
-                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">Prensa</p>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">{t('contact.channels.prensa')}</p>
                   <a href="mailto:prensa@vuelocontrolado.org" className="text-lg font-bold text-slate-900 dark:text-white hover:text-primary-500 transition-colors">prensa@vuelocontrolado.org</a>
                 </div>
               </div>
@@ -69,7 +70,7 @@ const ContactPage: React.FC = () => {
                   <Icon icon="material-symbols:mail-outline" width={28} />
                 </div>
                 <div>
-                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">RRHH</p>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">{t('contact.channels.rrhh')}</p>
                   <a href="mailto:rrhh@vuelocontrolado.org" className="text-lg font-bold text-slate-900 dark:text-white hover:text-primary-500 transition-colors">rrhh@vuelocontrolado.org</a>
                 </div>
               </div>
@@ -79,7 +80,7 @@ const ContactPage: React.FC = () => {
                   <Icon icon="mdi:instagram" width={28} />
                 </div>
                 <div>
-                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">Instagram</p>
+                  <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">{t('contact.channels.instagram')}</p>
                   <a href="https://www.instagram.com/vuelocontrolado" target="_blank" rel="noopener noreferrer" className="text-lg font-bold text-slate-900 dark:text-white hover:text-primary-500 transition-colors">@vuelocontrolado</a>
                 </div>
               </div>
@@ -99,18 +100,28 @@ const ContactPage: React.FC = () => {
                 <div className="w-14 h-14 rounded-2xl bg-primary-500/10 flex items-center justify-center text-primary-500 shrink-0">
                   <Icon icon="material-symbols:event-available-outline" width={32} />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">Eventos y Escuelas</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">{t('contact.events.title')}</h2>
               </div>
               <p className="text-xl text-slate-600 dark:text-slate-400 font-medium leading-relaxed mb-10">
-                ¿Querés que Vuelo Controlado esté en tu evento o brinde una charla en tu escuela? Llevamos nuestros dispositivos de reducción de riesgos e información profesional a donde más se necesita.
+                {t('contact.events.desc')}
               </p>
-              <a 
-                href="mailto:produccion@vuelocontrolado.org" 
-                className="inline-flex items-center space-x-4 text-primary-500 font-black uppercase tracking-widest text-base group"
-              >
-                <span>Contactar a Producción</span>
-                <Icon icon="material-symbols:arrow-right-alt-rounded" width={28} className="group-hover:translate-x-2 transition-transform" />
-              </a>
+              <div className="flex flex-wrap items-center gap-8">
+                <a 
+                  href="mailto:produccion@vuelocontrolado.org" 
+                  className="inline-flex items-center space-x-4 text-primary-500 font-black uppercase tracking-widest text-base group"
+                >
+                  <span>{t('contact.events.cta')}</span>
+                  <Icon icon="material-symbols:arrow-right-alt-rounded" width={28} className="group-hover:translate-x-2 transition-transform" />
+                </a>
+                
+                <Link 
+                  to="/quote"
+                  className="btn bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-white/20 px-8 py-3 rounded-2xl font-bold transition-all flex items-center gap-3 shadow-sm"
+                >
+                  <Icon icon="material-symbols:request-quote-outline" width={24} className="text-primary-500" />
+                  <span>{t('contact.events.quote')}</span>
+                </Link>
+              </div>
             </motion.div>
 
             {/* Volunteer Form Card */}
@@ -124,9 +135,9 @@ const ContactPage: React.FC = () => {
                 <div className="w-14 h-14 rounded-2xl bg-primary-500/10 flex items-center justify-center text-primary-500 shrink-0">
                   <Icon icon="material-symbols:volunteer-activism-outline" width={32} />
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">Sumate</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">{t('contact.volunteer.title')}</h2>
               </div>
-              <p className="text-lg text-slate-600 dark:text-slate-400 font-medium mb-10">Completá el formulario para sumarte como voluntario.</p>
+              <p className="text-lg text-slate-600 dark:text-slate-400 font-medium mb-10">{t('contact.volunteer.desc')}</p>
 
               <AnimatePresence mode="wait">
                 {status === 'success' ? (
@@ -140,8 +151,8 @@ const ContactPage: React.FC = () => {
                     <div className="w-20 h-20 bg-primary-500/10 rounded-full flex items-center justify-center text-primary-500 mb-6">
                       <Icon icon="material-symbols:check-circle-outline" width={48} />
                     </div>
-                    <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">¡Solicitud enviada!</h3>
-                    <p className="text-lg text-slate-600 dark:text-slate-400 font-medium">Te responderemos pronto.</p>
+                    <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">{t('contact.volunteer.success')}</h3>
+                    <p className="text-lg text-slate-600 dark:text-slate-400 font-medium">{t('contact.volunteer.successDesc')}</p>
                   </motion.div>
                 ) : (
                   <motion.form 
@@ -181,7 +192,7 @@ const ContactPage: React.FC = () => {
                         name="mensaje"
                         rows={4} 
                         className="w-full bg-white dark:bg-brand-dark border border-slate-200 dark:border-white/10 rounded-2xl px-6 py-4 focus:ring-1 focus:ring-primary-500 focus:border-transparent transition-all outline-none text-slate-900 dark:text-white font-bold shadow-inner"
-                        placeholder="¿Por qué te gustaría sumarte?"
+                        placeholder={t('contact.volunteer.placeholderMsg')}
                       ></textarea>
                     </div>
                     <button 
@@ -189,7 +200,7 @@ const ContactPage: React.FC = () => {
                       type="submit" 
                       className="w-full bg-primary-500 text-brand-dark py-6 rounded-2xl font-black uppercase tracking-[0.2em] group transition-all hover:bg-primary-400 disabled:opacity-50 text-lg shadow-xl shadow-primary-500/20"
                     >
-                      <span>{status === 'loading' ? 'Enviando...' : 'Enviar Solicitud'}</span>
+                      <span>{status === 'loading' ? t('contact.volunteer.loading') : t('contact.volunteer.submit')}</span>
                     </button>
                   </motion.form>
                 )}

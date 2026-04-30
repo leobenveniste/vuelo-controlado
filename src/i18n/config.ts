@@ -124,12 +124,33 @@ i18n
             learnMore: 'Learn more'
           },
           contact: {
+            label: 'Let\'s talk',
             title: 'Get in Touch',
             subtitle: 'Want Vuelo Controlado at your event? Or join as a volunteer?',
             info: {
               write: 'Write us',
               follow: 'Follow us',
               location: 'Location'
+            },
+            channels: {
+              prensa: 'Press',
+              rrhh: 'HR',
+              instagram: 'Instagram'
+            },
+            events: {
+              title: 'Events & Schools',
+              desc: 'Want Vuelo Controlado at your event or to give a talk at your school? We bring our harm reduction devices and professional information where it is needed most.',
+              cta: 'Contact Production',
+              quote: 'Request Quote'
+            },
+            volunteer: {
+              title: 'Join Us',
+              desc: 'Complete the form to join as a volunteer.',
+              success: 'Request sent!',
+              successDesc: 'We will respond soon.',
+              placeholderMsg: 'Why would you like to join?',
+              submit: 'Send Request',
+              loading: 'Sending...'
             },
             organizer: {
               title: 'Are you an organizer?',
@@ -146,9 +167,63 @@ i18n
               placeholderMsg: 'Tell us about your inquiry...'
             }
           },
+          quote: {
+            title: 'Request a Quote',
+            subtitle: 'Tell us about your event to receive a personalized proposal.',
+            form: {
+              productora: 'Production Company / Organizer',
+              city: 'City / Province',
+              eventName: 'Event Name / Main DJ',
+              date: 'Date',
+              openTime: 'Opening Time',
+              closeTime: 'Closing Time',
+              location: 'Venue: Name, indoor/outdoor/both',
+              attendance: 'Estimated attendance (Min/max)',
+              healthSystem: {
+                label: 'What will be the health system?',
+                ambulance: 'Ambulance',
+                post: 'Sanitary Post',
+                nursing: 'Nursing',
+                vuelo: 'Vuelo Controlado manages',
+                other: 'Other'
+              },
+              hydration: {
+                label: 'Will there be free hydration points?',
+                yes: 'Yes',
+                no: 'No'
+              },
+              contact: 'Contact Name and Phone',
+              extra: 'Tell us more about the event',
+              submit: 'Send Quote Request',
+              loading: 'Sending...',
+              success: 'Request Received!',
+              successDesc: 'We will analyze your event and contact you with a proposal soon.'
+            }
+          },
           donate: {
             title: 'Support our mission',
             subtitle: 'Your contribution directly supports our mission to promote health and care in cultural events.',
+            intro: 'At Fundación Vuelo Controlado, we believe that celebrations should be spaces of enjoyment, freedom and, above all, well-being. For years, our team has been touring Argentina\'s dancefloors to transform nightlife into a safer environment, creating recovery spaces and providing professional information and assistance without judgment.',
+            whyTitle: 'Why do we need your support?',
+            whyDesc: 'For our work to remain independent and professional, we have launched the Vuelo Community. With your monthly donation, you help us sustain and boost three fundamental pillars:',
+            pillars: {
+              interventions: {
+                title: 'More Interventions',
+                desc: 'To bring our harm reduction devices to more parts of the country.'
+              },
+              research: {
+                title: 'Scientific Research',
+                desc: 'Generate local data on consumption in Argentina to design better interventions and propose new public health strategies.'
+              },
+              training: {
+                title: 'Continuous Training',
+                desc: 'Strengthen the training of our volunteers and professionals to provide you with the best assistance on and off the dancefloor.'
+              }
+            },
+            impactTitle: 'Your impact is real',
+            impactDesc: 'Did you know that your monthly contribution is approximately equivalent to the value of a bottle of water at a party? With that small gesture, you make it possible for us to be present at the next event, taking care of you and your friends.',
+            sumate: 'Join the Vuelo Community today. Because celebrations are enjoyed more when we take care of each other.',
+            thanks: 'Thank you for joining this community!',
             select: 'Select Donation Amount',
             custom: 'Custom Amount',
             btn: 'Donate ${{amount}} Now',
@@ -284,6 +359,7 @@ i18n
             learnMore: 'Saber más'
           },
           contact: {
+            label: 'Hablemos',
             title: 'Ponete en contacto',
             subtitle: '¿Querés que Vuelo Controlado esté en tu evento? ¿O sumarte como voluntario?',
             info: {
@@ -291,10 +367,30 @@ i18n
               follow: 'Seguinos',
               location: 'Ubicación'
             },
+            channels: {
+              prensa: 'Prensa',
+              rrhh: 'RRHH',
+              instagram: 'Instagram'
+            },
+            events: {
+              title: 'Eventos y Escuelas',
+              desc: '¿Querés que Vuelo Controlado esté en tu evento o brinde una charla en tu escuela? Llevamos nuestros dispositivos de reducción de riesgos e información profesional a donde más se necesita.',
+              cta: 'Contactar a Producción',
+              quote: 'Solicitar Presupuesto'
+            },
+            volunteer: {
+              title: 'Sumate',
+              desc: 'Completá el formulario para sumarte como voluntario.',
+              success: '¡Solicitud enviada!',
+              successDesc: 'Te responderemos pronto.',
+              placeholderMsg: '¿Por qué te gustaría sumarte?',
+              submit: 'Enviar Solicitud',
+              loading: 'Enviando...'
+            },
             organizer: {
               title: '¿Sos organizador?',
               desc: 'Ofrecemos diagnósticos personalizados para cada tipo de evento cultural o de entretenimiento.',
-              cta: 'Pedir Presupuesto'
+              cta: 'Solicitar Presupuesto'
             },
             form: {
               name: 'Nombre',
@@ -306,9 +402,63 @@ i18n
               placeholderMsg: 'Contanos sobre tu consulta...'
             }
           },
+          quote: {
+            title: 'Pedir Presupuesto',
+            subtitle: 'Contanos sobre tu evento para recibir una propuesta personalizada.',
+            form: {
+              productora: 'Productora / Organizador',
+              city: 'Ciudad / Provincia',
+              eventName: 'Nombre del Evento / DJ Principal',
+              date: 'Fecha',
+              openTime: 'Horario de Apertura',
+              closeTime: 'Horario de Cierre',
+              location: 'Locación: Nombre, espacio cerrado/abierto/ambos',
+              attendance: 'Cantidad estimada de asistentes (Min/max)',
+              healthSystem: {
+                label: '¿Cuál será el sistema de salud?',
+                ambulance: 'Ambulancia',
+                post: 'Puesto Sanitario',
+                nursing: 'Enfermería',
+                vuelo: 'Vuelo Controlado gestiona',
+                other: 'Otro'
+              },
+              hydration: {
+                label: '¿Contará con puestos gratuitos de hidratación?',
+                yes: 'Sí',
+                no: 'No'
+              },
+              contact: 'Nombre y teléfono de contacto',
+              extra: '¿Querés contarnos algo más sobre el evento?',
+              submit: 'Enviar pedido de presupuesto',
+              loading: 'Enviando...',
+              success: '¡Pedido Recibido!',
+              successDesc: 'Analizaremos tu evento y nos pondremos en contacto pronto con una propuesta.'
+            }
+          },
           donate: {
             title: 'Apoyá nuestra misión',
             subtitle: 'Tu contribución apoya directamente nuestra misión de promover la salud y el cuidado en eventos culturales.',
+            intro: 'En Fundación Vuelo Controlado, pensamos que la fiesta debe ser un espacio de disfrute, libertad y, sobre todo, bienestar. Desde hace años, nuestro equipo recorre las pistas de Argentina para transformar la nocturnidad en un entorno más seguro, creando espacios de recuperación y brindando información y asistencia profesional sin prejuicios.',
+            whyTitle: '¿Por qué necesitamos tu apoyo?',
+            whyDesc: 'Para que nuestro trabajo siga siendo independiente y profesional, lanzamos la Comunidad de Vuelo. Con tu donación mensual, nos ayudás a sostener e impulsar tres pilares fundamentales:',
+            pillars: {
+              interventions: {
+                title: 'Más intervenciones',
+                desc: 'Para llevar nuestros dispositivos de reducción de daños a cada vez más puntos del país.'
+              },
+              research: {
+                title: 'Investigación Científica',
+                desc: 'Generar datos locales sobre consumos en Argentina para diseñar mejores intervenciones y proponer nuevas estrategias en materia de salud pública.'
+              },
+              training: {
+                title: 'Formación Continua',
+                desc: 'Fortalecer la formación de nuestros voluntarios y profesionales para brindarte la mejor asistencia en la pista y fuera de ella.'
+              }
+            },
+            impactTitle: 'Tu impacto es real',
+            impactDesc: '¿Sabías que tu aporte mensual equivale aproximadamente al valor de una botella de agua en una fiesta? Con ese pequeño gesto, vos hacés posible que estemos presentes en el próximo evento, cuidándote a vos, a tus amigos y a tus amigas.',
+            sumate: 'Sumate hoy a la Comunidad de Vuelo. Porque la fiesta se disfruta más cuando nos cuidamos entre todos.',
+            thanks: '¡Gracias por sumarte a esta comunidad!',
             select: 'Seleccioná el monto',
             custom: 'Monto personalizado',
             btn: 'Donar ${{amount}} ahora',
