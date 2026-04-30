@@ -59,8 +59,8 @@ const DonatePage: React.FC = () => {
            <iframe 
              src={DONATE_URL}
              width="100%" 
-             height="1300px" 
-             style={{ marginTop: '-800px' }}
+             height="2000px" 
+             style={{ marginTop: '-1200px' }}
              frameBorder="0" 
              allowTransparency={true}
              className="w-full relative z-10"
