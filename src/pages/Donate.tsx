@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Icon } from '@iconify/react';
+import { CheckCircle2 } from 'lucide-react';
 
 const DonatePage: React.FC = () => {
   const { t } = useTranslation();
@@ -32,11 +33,20 @@ const DonatePage: React.FC = () => {
               Para que nuestro trabajo siga siendo independiente y profesional, lanzamos la Comunidad de Vuelo. Con tu donación mensual, nos ayudás a sostener e impulsar tres pilares fundamentales:
             </p>
             
-            <ul className="list-disc pl-6 space-y-3">
-              <li><strong className="text-slate-900 dark:text-white">Más intervenciones:</strong> Para llevar nuestros dispositivos de reducción de daños a cada vez más puntos del país.</li>
-              <li><strong className="text-slate-900 dark:text-white">Investigación Científica:</strong> Generar datos locales sobre consumos en Argentina para diseñar mejores intervenciones y proponer nuevas estrategias en materia de salud pública.</li>
-              <li><strong className="text-slate-900 dark:text-white">Formación Continua:</strong> Fortalecer la formación de nuestros voluntarios y profesionales para brindarte la mejor asistencia en la pista y fuera de ella.</li>
-            </ul>
+            <div className="space-y-4 pt-2">
+              <div className="flex items-start space-x-3">
+                <CheckCircle2 className="text-primary-500 flex-shrink-0 mt-1" size={20} />
+                <p><strong className="text-slate-900 dark:text-white">Más intervenciones:</strong> Para llevar nuestros dispositivos de reducción de daños a cada vez más puntos del país.</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle2 className="text-primary-500 flex-shrink-0 mt-1" size={20} />
+                <p><strong className="text-slate-900 dark:text-white">Investigación Científica:</strong> Generar datos locales sobre consumos en Argentina para diseñar mejores intervenciones y proponer nuevas estrategias en materia de salud pública.</p>
+              </div>
+              <div className="flex items-start space-x-3">
+                <CheckCircle2 className="text-primary-500 flex-shrink-0 mt-1" size={20} />
+                <p><strong className="text-slate-900 dark:text-white">Formación Continua:</strong> Fortalecer la formación de nuestros voluntarios y profesionales para brindarte la mejor asistencia en la pista y fuera de ella.</p>
+              </div>
+            </div>
 
             <h2 className="text-2xl font-bold text-slate-900 dark:text-white pt-4">Tu impacto es real</h2>
             <p>
