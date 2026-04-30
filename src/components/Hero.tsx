@@ -31,11 +31,17 @@ const Hero: React.FC = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-6xl md:text-8xl font-display font-black text-slate-900 dark:text-white leading-[0.9] mb-10 tracking-tighter"
           >
-            {t('hero.title').split(' ').map((word: string, i: number) => (
-              <span key={i} className={['Riesgos', 'Cuidado', 'Risks', 'Care'].includes(word.replace(/[.,]/g, '')) ? 'text-primary-500' : ''}>
-                {word}{' '}
-              </span>
-            ))}
+            {t('hero.title').split(' ').map((word: string, i: number) => {
+              const isTarget = ['Riesgos', 'Cuidado', 'Risks', 'Care'].includes(word.replace(/[.,]/g, ''));
+              return (
+                <span 
+                  key={i} 
+                  className={isTarget ? 'text-primary-500 bg-slate-900 dark:bg-black/40 px-4 py-1 rounded-2xl inline-block mx-1 my-1' : ''}
+                >
+                  {word}{' '}
+                </span>
+              );
+            })}
           </motion.h1>
 
           <motion.p
