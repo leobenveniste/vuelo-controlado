@@ -23,11 +23,11 @@ i18n
             donate: 'Donate'
           },
           hero: {
-            title: 'Reducing Risks, Enhancing Care',
-            subtitle: 'We promote health and harm reduction in cultural and nightlife events. Because caring for ourselves is part of the celebration.',
+            title: '- risk + fun',
+            subtitle: 'We promote health in leisure spaces so that the public and production companies have more and better care tools.',
             cta: 'Our Impact',
             donate: 'Support our mission',
-            tags: 'Harm Reduction • Health • Care',
+            tags: 'Risk and Harm Reduction • Health • Care',
             pillars: {
               goals: { title: 'Health First', desc: 'Promoting well-being and risk reduction in every intervention.' },
               community: { title: 'Safe Space', desc: 'Creating environments where everyone feels cared for and respected.' },
@@ -36,8 +36,8 @@ i18n
             }
           },
           mission: {
-            title: 'Health & Harm Reduction',
-            description: 'We work to mitigate risks associated with substance use and promote self-care in cultural events.',
+            title: 'Mental Health and Risk and Harm Reduction',
+            description: 'We are part of the party\'s health system, providing a strategic perspective to assist from physical and mental health according to the need.',
             vision: {
               label: 'Our Vision',
               title: 'A safer and healthier leisure environment.',
@@ -260,11 +260,11 @@ i18n
             donate: 'Donar'
           },
           hero: {
-            title: 'Reduciendo Riesgos, Potenciando el Cuidado',
-            subtitle: 'Promovemos la salud y la reducción de daños en eventos culturales y de ocio nocturno. Porque cuidarnos también es parte de la fiesta.',
+            title: '- riesgo + diversión',
+            subtitle: 'Promovemos la salud en espacios de ocio para que el público y las productoras cuenten con más y mejores herramientas de cuidado.',
             cta: 'Nuestro Impacto',
             donate: 'Apoyá nuestra misión',
-            tags: 'Reducción de Daños • Salud • Cuidado',
+            tags: 'Reducción de riesgos y daños • Salud • Cuidado',
             pillars: {
               goals: { title: 'Salud Primero', desc: 'Promoviendo el bienestar y la reducción de riesgos en cada intervención.' },
               community: { title: 'Espacio Seguro', desc: 'Creando entornos donde todos se sientan cuidados y respetados.' },
@@ -273,8 +273,8 @@ i18n
             }
           },
           mission: {
-            title: 'Salud y Reducción de Daños',
-            description: 'Mitigamos los riesgos asociados al consumo de sustancias a través del cuidado, la información y la asistencia directa en entornos de ocio.',
+            title: 'Salud mental y reducción de riesgos y daños',
+            description: 'Somos parte del sistema de salud de la fiesta, aportando una mirada estratégica para asistir desde la salud física y mental de acuerdo a la necesidad',
             vision: {
               label: 'Nuestra Visión',
               title: 'Un entorno de ocio más seguro y saludable.',

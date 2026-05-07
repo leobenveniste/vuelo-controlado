@@ -32,7 +32,8 @@ const Hero: React.FC = () => {
             className="text-6xl md:text-8xl font-display font-black text-slate-900 dark:text-white leading-[0.9] mb-10 tracking-tighter"
           >
             {t('hero.title').split(' ').map((word: string, i: number) => {
-              const isTarget = ['Riesgos', 'Cuidado', 'Risks', 'Care'].includes(word.replace(/[.,]/g, ''));
+              const cleanWord = word.replace(/[.,+-]/g, '').toLowerCase();
+              const isTarget = ['riesgo', 'diversión', 'diversion', 'risk', 'fun'].includes(cleanWord);
               return (
                 <span 
                   key={i} 
