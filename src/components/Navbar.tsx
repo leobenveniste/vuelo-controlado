@@ -15,11 +15,19 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isMenuOpen]);
 
   const toggleLanguage = () => {
     const nextLang = i18n.language === 'en' ? 'es' : 'en';
@@ -35,18 +43,18 @@ const Navbar: React.FC = () => {
 
   return (
     <nav 
-      className={`fixed w-full z-50 transition-all duration-500 py-4 ${
+      className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'bg-brand-dark/95 dark:bg-white/95 backdrop-blur-xl border-b border-white/10 dark:border-slate-200 shadow-lg' 
-          : 'bg-brand-dark dark:bg-white'
+          ? 'py-3 bg-brand-dark/90 dark:bg-white/90 backdrop-blur-lg border-b border-white/10 dark:border-slate-200 shadow-xl' 
+          : 'py-5 bg-brand-dark dark:bg-white'
       }`}
     >
       <div className="w-full px-4 sm:px-8 lg:px-12">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center group">
-            <div className="h-8 md:h-10 transform group-hover:scale-105 transition-transform">
+            <div className={`transition-all duration-300 transform group-hover:scale-105 ${isScrolled ? 'h-7 md:h-9' : 'h-8 md:h-10'}`}>
               <img 
-                src={theme === 'dark' ? '/logo.png?v=1' : '/logo_blanco.png'} 
+                src={theme === 'dark' ? '/logo.png' : '/logo_blanco.png'} 
                 alt="Fundación Vuelo Controlado" 
                 className="h-full w-auto object-contain" 
               />
@@ -59,20 +67,21 @@ const Navbar: React.FC = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-black uppercase tracking-widest transition-colors ${
+                className={`text-sm font-bold uppercase tracking-widest transition-colors ${
                   location.pathname === link.path 
-                    ? 'text-primary-500 dark:text-primary-600' 
-                    : 'text-slate-400 dark:text-slate-600 hover:text-primary-400 dark:hover:text-primary-500'
+                    ? 'text-primary-500' 
+                    : 'text-slate-400 dark:text-slate-600 hover:text-primary-500'
                 }`}
               >
                 {link.name}
               </Link>
             ))}
             
-            <div className="flex items-center space-x-6 border-l border-white/10 dark:border-slate-200 pl-6">
+            <div className={`flex items-center space-x-6 border-l transition-colors duration-300 pl-6 border-white/10 dark:border-slate-200`}>
+
               <button 
                 onClick={toggleLanguage}
-                className="flex items-center text-slate-400 dark:text-slate-600 hover:text-primary-400 dark:hover:text-primary-500 transition-colors group"
+                className={`flex items-center transition-colors group text-slate-400 dark:text-slate-600 hover:text-primary-500`}
               >
                 <Icon 
                   icon={i18n.language === 'en' ? 'circle-flags:us' : 'circle-flags:ar'} 
@@ -83,7 +92,7 @@ const Navbar: React.FC = () => {
 
               <button 
                 onClick={toggleTheme}
-                className="text-slate-400 dark:text-slate-600 hover:text-primary-400 dark:hover:text-primary-500 transition-colors flex items-center text-2xl relative w-6 h-6"
+                className={`transition-colors flex items-center text-2xl relative w-6 h-6 text-slate-400 dark:text-slate-600 hover:text-primary-500`}
               >
                 <motion.div
                   initial={false}
@@ -106,7 +115,7 @@ const Navbar: React.FC = () => {
 
             <Link 
               to="/donate" 
-              className={`bg-primary-500 text-brand-dark hover:bg-primary-400 px-6 py-2.5 rounded-xl text-sm font-black uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(0,255,0,0.15)] ${
+              className={`bg-primary-500 text-brand-dark hover:bg-primary-400 px-6 py-2.5 rounded-xl text-sm font-bold uppercase tracking-wider transition-all shadow-lg hover:shadow-primary-500/20 ${
                 location.pathname === '/donate' ? 'ring-2 ring-primary-500 ring-offset-2' : ''
               }`}
             >
@@ -115,14 +124,14 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center space-x-4">
+          <div className="md:hidden flex items-center space-x-6">
              <button onClick={toggleLanguage} className="flex items-center">
                 <Icon 
                   icon={i18n.language === 'en' ? 'circle-flags:us' : 'circle-flags:ar'} 
-                  width={20} 
+                  width={24} 
                 />
              </button>
-             <button onClick={toggleTheme} className="text-white dark:text-slate-900 flex items-center relative w-6 h-6">
+             <button onClick={toggleTheme} className={`flex items-center relative w-6 h-6 text-white dark:text-slate-900`}>
                 <motion.div
                   initial={false}
                   animate={{ scale: theme === 'dark' ? 1 : 0, opacity: theme === 'dark' ? 1 : 0, rotate: theme === 'dark' ? 0 : 90 }}
@@ -162,7 +171,7 @@ const Navbar: React.FC = () => {
             <div className="flex justify-between items-center mb-12">
                <div className="flex items-center">
                  <img 
-                   src={theme === 'dark' ? '/logo.png?v=1' : '/logo_blanco.png'} 
+                   src={theme === 'dark' ? '/logo.png' : '/logo_blanco.png'} 
                    alt="Logo" 
                    className="h-10 w-auto object-contain" 
                  />
@@ -178,14 +187,14 @@ const Navbar: React.FC = () => {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-4xl font-black uppercase tracking-tighter text-white dark:text-slate-900 hover:text-primary-400 dark:hover:text-primary-600 transition-colors"
+                  className="text-4xl font-black uppercase tracking-tighter text-white dark:text-slate-900 hover:text-primary-500 transition-colors"
                 >
                   {link.name}
                 </Link>
               ))}
             </div>
 
-            <div className="pt-8 border-t border-white/10 dark:border-slate-100 mt-auto">
+            <div className="pt-8 border-t border-slate-100 dark:border-white/10 mt-auto">
                 <Link 
                   to="/donate" 
                   onClick={() => setIsMenuOpen(false)}
