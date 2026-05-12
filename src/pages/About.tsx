@@ -42,8 +42,11 @@ const AboutPage: React.FC = () => {
             <p className="text-xl text-slate-600 dark:text-slate-400 mb-8 leading-relaxed font-medium">
               {t('about.story1')}
             </p>
-            <p className="text-xl text-slate-600 dark:text-slate-400 mb-10 leading-relaxed font-medium">
+            <p className="text-xl text-slate-600 dark:text-slate-400 mb-8 leading-relaxed font-medium">
               {t('about.story2')}
+            </p>
+            <p className="text-xl text-slate-600 dark:text-slate-400 mb-10 leading-relaxed font-medium">
+              {t('about.story3')}
             </p>
             <div className="grid grid-cols-2 gap-10">
               <div>
@@ -62,7 +65,7 @@ const AboutPage: React.FC = () => {
         {/* Team Section */}
         <div className="text-center mb-20">
           <h2 className="text-4xl font-display font-black text-slate-900 dark:text-white mb-6 tracking-tighter">{t('about.team.title')}</h2>
-          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto font-medium text-lg">
+          <p className="text-slate-600 dark:text-slate-400 max-w-4xl mx-auto font-medium text-lg leading-relaxed">
             {t('about.team.subtitle')}
           </p>
         </div>

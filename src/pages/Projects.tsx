@@ -16,19 +16,19 @@ const ProjectsPage: React.FC = () => {
     {
       title: t('projects.items.rest.title'),
       desc: t('projects.items.rest.desc'),
-      icon: <Icon icon="material-symbols:coffee-outline" width={64} />,
+      icon: <Icon icon="material-symbols:night-shelter-outline" width={64} />,
       category: t('about.values.network')
     },
     {
-      title: t('projects.items.social.title'),
-      desc: t('projects.items.social.desc'),
-      icon: <Icon icon="material-symbols:ecg-heart-outline" width={64} />,
+      title: t('projects.items.staff.title'),
+      desc: t('projects.items.staff.desc'),
+      icon: <Icon icon="material-symbols:medical-services-outline" width={64} />,
       category: t('about.values.health')
     },
     {
-      title: t('projects.items.edu.title'),
-      desc: t('projects.items.edu.desc'),
-      icon: <Icon icon="material-symbols:psychology-outline" width={64} />,
+      title: t('projects.items.track.title'),
+      desc: t('projects.items.track.desc'),
+      icon: <Icon icon="material-symbols:groups-outline" width={64} />,
       category: t('about.values.science')
     }
   ];
@@ -47,7 +47,7 @@ const ProjectsPage: React.FC = () => {
               <span className="text-primary-500 font-bold uppercase tracking-[0.3em] text-sm mb-6 block">{t('projects.title')}</span>
               <h1 className="text-4xl md:text-6xl font-display font-black text-slate-900 dark:text-white mb-6 tracking-tighter leading-none">
                 {t('projects.subtitle').split(' ').map((word, i) => (
-                  <span key={i} className={['cuidado', 'festivales', 'care', 'festivals'].includes(word.replace(/[.,]/g, '').toLowerCase()) ? 'text-primary-500' : ''}>
+                  <span key={i} className={['sistema', 'salud', 'festivales', 'system', 'health', 'festivals'].includes(word.replace(/[.,]/g, '').toLowerCase()) ? 'text-primary-500' : ''}>
                     {word}{' '}
                   </span>
                 ))}

@@ -89,12 +89,12 @@ const ContactPage: React.FC = () => {
 
           {/* Right Column: Stacked Cards */}
           <div className="lg:col-span-7 space-y-12">
-            {/* Events & Schools Card */}
+            {/* Events Card */}
             <motion.div 
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              className="bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-[3rem] p-10 md:p-14"
+              className="bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-[3rem] p-10 md:p-14 shadow-sm"
             >
               <div className="flex items-center gap-6 mb-8">
                 <div className="w-14 h-14 rounded-2xl bg-primary-500/10 flex items-center justify-center text-primary-500 shrink-0">
@@ -105,23 +105,48 @@ const ContactPage: React.FC = () => {
               <p className="text-xl text-slate-600 dark:text-slate-400 font-medium leading-relaxed mb-10">
                 {t('contact.events.desc')}
               </p>
-              <div className="flex flex-wrap items-center gap-8">
-                <a 
-                  href="mailto:produccion@vuelocontrolado.org" 
-                  className="inline-flex items-center space-x-4 text-primary-500 font-black uppercase tracking-widest text-base group"
-                >
-                  <span>{t('contact.events.cta')}</span>
-                  <Icon icon="material-symbols:arrow-right-alt-rounded" width={28} className="group-hover:translate-x-2 transition-transform" />
-                </a>
-                
+              <div className="flex flex-wrap items-center gap-6">
                 <Link 
                   to="/quote"
-                  className="btn bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-white/20 px-8 py-3 rounded-2xl font-bold transition-all flex items-center gap-3 shadow-sm"
+                  className="bg-primary-500 text-brand-dark px-8 py-4 rounded-2xl font-black uppercase tracking-widest transition-all hover:bg-primary-400 flex items-center gap-3 shadow-lg shadow-primary-500/10"
                 >
-                  <Icon icon="material-symbols:request-quote-outline" width={24} className="text-primary-500" />
+                  <Icon icon="material-symbols:request-quote-outline" width={24} />
                   <span>{t('contact.events.quote')}</span>
                 </Link>
+
+                <a 
+                  href="mailto:produccion@vuelocontrolado.org" 
+                  className="bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-white/20 px-8 py-4 rounded-2xl font-bold transition-all flex items-center gap-3 shadow-sm"
+                >
+                  <Icon icon="material-symbols:mail-outline" width={24} className="text-primary-500" />
+                  <span>{t('contact.events.cta')}</span>
+                </a>
               </div>
+            </motion.div>
+
+            {/* Schools & Universities Card */}
+            <motion.div 
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-[3rem] p-10 md:p-14 shadow-sm"
+            >
+              <div className="flex items-center gap-6 mb-8">
+                <div className="w-14 h-14 rounded-2xl bg-primary-500/10 flex items-center justify-center text-primary-500 shrink-0">
+                  <Icon icon="material-symbols:school-outline" width={32} />
+                </div>
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white tracking-tight">{t('contact.schools.title')}</h2>
+              </div>
+              <p className="text-xl text-slate-600 dark:text-slate-400 font-medium leading-relaxed mb-10">
+                {t('contact.schools.desc')}
+              </p>
+              <a 
+                href="mailto:produccion@vuelocontrolado.org" 
+                className="bg-white dark:bg-white/10 border border-slate-200 dark:border-white/10 text-slate-900 dark:text-white hover:bg-slate-50 dark:hover:bg-white/20 px-8 py-4 rounded-2xl font-bold transition-all flex items-center gap-3 shadow-sm inline-flex w-fit"
+              >
+                <Icon icon="material-symbols:mail-outline" width={24} className="text-primary-500" />
+                <span>{t('contact.schools.cta')}</span>
+              </a>
             </motion.div>
 
             {/* Volunteer Form Card */}

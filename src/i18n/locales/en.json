@@ -1,0 +1,251 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "mission": "Vision",
+    "projects": "Our Work",
+    "contact": "Contact",
+    "donate": "Donate"
+  },
+  "hero": {
+    "title": "- risk + fun",
+    "subtitle": "We promote health in leisure spaces so that the public and production companies have more and better care tools.",
+    "cta": "Our Impact",
+    "donate": "Support our mission",
+    "tags": "Risk and Harm Reduction • Health • Care",
+    "pillars": {
+      "goals": { "title": "Health First", "desc": "Promoting well-being and risk reduction in every intervention." },
+      "community": { "title": "Safe Space", "desc": "Creating environments where everyone feels cared for and respected." },
+      "education": { "title": "Awareness", "desc": "Empowering through scientific and clear information about risks." },
+      "impact": { "title": "Direct Impact", "desc": "Immediate assistance and support in the heart of the celebration." }
+    }
+  },
+  "mission": {
+    "title": "Support Device for Parties and Events",
+    "description": "We are part of the party's health system, providing a strategic perspective to assist from physical and mental health according to the need.",
+    "vision": {
+      "label": "Our Vision",
+      "title": "Increase awareness by stimulating mutual care.",
+      "paragraphs": [
+        "Vuelo Controlado's actions and concepts are sustained by a theoretical perspective of risk and harm reduction, assuming as such the development of pleasure and risk management strategies, offering objective information that facilitates taking responsibility in the decision to consume or not, approaching consumption from a preventive perspective.",
+        "The notion of risk reduction refers to a concept of pragmatic action to promote health while respecting lifestyle differences, especially in terms of sexuality and drug use. It is a commitment to reducing the risks associated with certain behaviors and holding people responsible for their decisions. This type of intervention is understood as a specific prevention for a determined group and complementary to primary prevention, not as opposed to it.",
+        "We understand that consuming drugs is not equal to having problems, nor are all forms of consuming equally problematic. There are forms of consumption that involve few risks and others that are extremely risky. Drugs have effects that are valued by the people who consume them.",
+        "The experience of pleasure is an inherent part of most drug consumption. The other part is the risks to which the consumer is exposed and which can come from various sources: the person themselves, the substance they consume, and the context in which they do so. Thus, adequate information (objective and without moral elements) is fundamental when deciding whether to consume or not and, if so, to be able to avoid the risks associated with its use."
+      ]
+    },
+    "pillars": {
+      "title": "Our Pillars",
+      "health": {
+        "title": "Health promotion and prevention",
+        "desc": "We facilitate access to scientific evidence-based information that enables attendees to increase their perception of risk associated with any consumption and to take responsibility for their decisions."
+      },
+      "recovery": {
+        "title": "Recovery space",
+        "desc": "Thoughtfully designed for the well-being of attendees, who can come here for rest, shelter, support, and hydration."
+      },
+      "support": {
+        "title": "Specific support",
+        "desc": "Provided by our specialized staff and directed at those event attendees who may need help or support."
+      },
+      "detection": {
+        "title": "Timely detection of potential risk cases",
+        "desc": "We work by bringing assistance to the dance floor, thus facilitating access to the device for those who may feel unwell within it."
+      }
+    },
+    "methodology": {
+      "title": "Intervention Methodology",
+      "subtitle": "We implement comprehensive devices that combine logistics, health, and education.",
+      "steps": [
+        "Situation diagnosis and planning of the specific strategy for each event.",
+        "Planning together with the event production for the setup of the recovery zone following the necessary aesthetic and technical criteria.",
+        "We coordinate actions and approach methods with other intervening sectors (security and ambulance services) to work together.",
+        "Identification of potential risk cases and problematic situations.",
+        "We provide psychological support and care for each case through symptom management. More complex cases will be referred to the health system provided by the production company."
+      ],
+      "summary": "These actions prevent the collapse of more complex health systems (nursing, ambulance, etc.)."
+    },
+    "stats": {
+      "hydration": "Free Hydration",
+      "founded": "Foundation",
+      "team": "Multidisciplinary Team",
+      "reduction": "Harm Reduction"
+    }
+  },
+  "about": {
+    "label": "Our Story",
+    "title": "We care for the Culture.",
+    "story1": "Vuelo Controlado emerged in late 2016, following the tragedy that occurred in April of the same year in the City of Buenos Aires at the Time Warp electronic festival.",
+    "story2": "In this lamentable episode, along with others like the Cromagnon tragedy, the lack of awareness of the entire chain of those responsible for these types of events was also demonstrated, in terms of providing certain health guarantees, such as free access to drinking water, resulting in this dramatic end and, of course, in the usual victims, young people.",
+    "story3": "Since then and until now, different entities related to electronic music events have joined efforts to collaborate from each field of knowledge to generate spaces for Health Prevention and Promotion in terms of self-care and care of others in relation to the consumption of legal and illegal substances and sexuality mainly.",
+    "stats": {
+      "care": "Non-punitive Care",
+      "events": "Cared Events",
+      "volunteers": "Active Volunteers"
+    },
+    "values": {
+      "health": "Health",
+      "science": "Science",
+      "impact": "Impact",
+      "network": "Network"
+    },
+    "team": {
+      "title": "Multidisciplinary Team",
+      "subtitle": "The Vuelo Controlado team is multidisciplinarily composed. It includes mental health professionals, advanced students, artists, designers, hygiene and safety professionals, etc., sensitive to the issue and with experience in nightlife, with training and formation in the area of recreational or problematic consumption, and with an empathetic and solidary profile.",
+      "veronica": { "name": "Veronica Chrabolowsky", "role": "Founder and Director" },
+      "paula": { "name": "Paula Vera", "role": "Communication and Press" },
+      "evan": { "name": "Evan Morris", "role": "Production and Human Resources" }
+    }
+  },
+  "projects": {
+    "title": "Our Work",
+    "subtitle": "We are part of the health system in the most important festivals in the region.",
+    "items": {
+      "hydration": {
+        "title": "Hydration Points",
+        "desc": "Design of stations according to the event from a situational logic."
+      },
+      "rest": {
+        "title": "Recovery Space",
+        "desc": "Areas designed for physical and mental recovery in high-stimulation environments. They are configured in total harmony with the event's environment, creating a communicational continuum between the different concurrent actors and participants, from aesthetics, human treatment, sensitivity and understanding of associated problems."
+      },
+      "staff": {
+        "title": "Our Staff",
+        "desc": "Logistic and technical management of the device, providing clear and concise information on consumption, acting as a link and mediating in the relationship of the different actors participating in the event, facilitating the request for help so difficult in these situations and providing psychological support if necessary."
+      },
+      "track": {
+        "title": "In-floor Intervention",
+        "desc": "Our staff also circulates, properly identified, throughout the event and the dance floor, in order to actively perform their role and bring help to those who require it and accept it, with the aim of being in continuous contact with the attendees and their needs."
+      }
+    },
+    "learnMore": "Learn more"
+  },
+  "contact": {
+    "label": "Let's talk",
+    "title": "Get in Touch",
+    "subtitle": "Want Vuelo Controlado at your event? Or join as a volunteer?",
+    "info": {
+      "write": "Write us",
+      "follow": "Follow us",
+      "location": "Location"
+    },
+    "channels": {
+      "prensa": "Press",
+      "rrhh": "HR",
+      "instagram": "Instagram"
+    },
+    "events": {
+      "title": "Events",
+      "desc": "If you are a producer and want Vuelo Controlado at your event, request a quote or contact our production team.",
+      "cta": "Contact Production",
+      "quote": "Request Quote"
+    },
+    "schools": {
+      "title": "Schools & Universities",
+      "desc": "If you are a student or teacher and want Vuelo Controlado to participate in an activity at your institution, contact us. We bring our harm reduction devices and professional information where it is needed most.",
+      "cta": "Contact Production"
+    },
+    "volunteer": {
+      "title": "Join Us",
+      "desc": "Complete the form to join as a volunteer.",
+      "success": "Request sent!",
+      "successDesc": "We will respond soon.",
+      "placeholderMsg": "Why would you like to join?",
+      "submit": "Send Request",
+      "loading": "Sending..."
+    },
+    "organizer": {
+      "title": "Are you an organizer?",
+      "desc": "We offer personalized diagnostics for every type of cultural or entertainment event.",
+      "cta": "Request Quote"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "city": "City of Residence",
+      "message": "Message",
+      "submit": "Send Message",
+      "placeholderName": "Your name",
+      "placeholderEmail": "your@email.com",
+      "placeholderCity": "Mendoza, Argentina",
+      "placeholderMsg": "Tell us about your inquiry..."
+    }
+  },
+  "quote": {
+    "title": "Request a Quote",
+    "subtitle": "Tell us about your event to receive a personalized proposal.",
+    "form": {
+      "productora": "Production Company / Organizer",
+      "city": "City / Province",
+      "eventName": "Event Name / Main DJ",
+      "date": "Date",
+      "openTime": "Opening Time",
+      "closeTime": "Closing Time",
+      "location": "Venue: Name, indoor/outdoor/both",
+      "attendance": "Estimated attendance (Min/max)",
+      "healthSystem": {
+        "label": "What will be the health system?",
+        "ambulance": "Ambulance",
+        "post": "Sanitary Post",
+        "nursing": "Nursing",
+        "vuelo": "Vuelo Controlado manages",
+        "other": "Other"
+      },
+      "hydration": {
+        "label": "Will there be free hydration points?",
+        "yes": "Yes",
+        "no": "No"
+      },
+      "contact": "Contact Name and Phone",
+      "extra": "Tell us more about the event",
+      "submit": "Send Quote Request",
+      "loading": "Sending...",
+      "success": "Request Received!",
+      "successDesc": "We will analyze your event and contact you with a proposal soon."
+    }
+  },
+  "donate": {
+    "title": "Support our mission",
+    "subtitle": "Your contribution directly supports our mission to promote health and care in cultural events.",
+    "intro": "At Fundación Vuelo Controlado, we believe that celebrations should be spaces of enjoyment, freedom and, above all, well-being. For years, our team has been touring Argentina's dancefloors to transform nightlife into a safer environment, creating recovery spaces and providing professional information and assistance without judgment.",
+    "whyTitle": "Why do we need your support?",
+    "whyDesc": "For our work to remain independent and professional, we have launched the Vuelo Community. With your monthly donation, you help us sustain and boost three fundamental pillars:",
+    "pillars": {
+      "interventions": {
+        "title": "More Interventions",
+        "desc": "To bring our harm reduction devices to more parts of the country."
+      },
+      "research": {
+        "title": "Scientific Research",
+        "desc": "Generate local data on consumption in Argentina to design better interventions and propose new public health strategies."
+      },
+      "training": {
+        "title": "Continuous Training",
+        "desc": "Strengthen the training of our volunteers and professionals to provide you with the best assistance on and off the dancefloor."
+      }
+    },
+    "impactTitle": "Your impact is real",
+    "impactDesc": "Did you know that your monthly contribution is approximately equivalent to the value of a bottle of water at a party? With that small gesture, you make it possible for us to be present at the next event, taking care of you and your friends.",
+    "sumate": "Join the Vuelo Community today. Because celebrations are enjoyed more when we take care of each other.",
+    "thanks": "Thank you for joining this community!",
+    "select": "Select Donation Amount",
+    "custom": "Custom Amount",
+    "btn": "Donate ${{amount}} Now",
+    "secure": "Secure Payment",
+    "impact": "Instant Impact",
+    "transparency": "Transparency"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "tagline": "Promoting health and care in cultural events.",
+    "nav": "Navigation",
+    "contact": "Contact",
+    "newsletter": {
+      "title": "Newsletter",
+      "desc": "Join us to receive information on care and health.",
+      "placeholder": "Email",
+      "btn": "OK"
+    },
+    "privacy": "Privacy",
+    "terms": "Terms"
+  }
+}

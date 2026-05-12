@@ -8,24 +8,24 @@ const Mission: React.FC = () => {
 
   const cards = [
     {
-      icon: "material-symbols:target",
-      title: t('hero.pillars.goals.title'),
-      description: t('hero.pillars.goals.desc')
+      icon: "material-symbols:health-and-safety-outline",
+      title: t('mission.pillars.health.title'),
+      description: t('mission.pillars.health.desc')
     },
     {
-      icon: "material-symbols:shield-outline",
-      title: t('hero.pillars.community.title'),
-      description: t('hero.pillars.community.desc')
+      icon: "material-symbols:night-shelter-outline",
+      title: t('mission.pillars.recovery.title'),
+      description: t('mission.pillars.recovery.desc')
     },
     {
-      icon: "material-symbols:book-2-outline",
-      title: t('hero.pillars.education.title'),
-      description: t('hero.pillars.education.desc')
+      icon: "material-symbols:support-agent",
+      title: t('mission.pillars.support.title'),
+      description: t('mission.pillars.support.desc')
     },
     {
-      icon: "material-symbols:bolt-outline",
-      title: t('hero.pillars.impact.title'),
-      description: t('hero.pillars.impact.desc')
+      icon: "material-symbols:visibility-outline",
+      title: t('mission.pillars.detection.title'),
+      description: t('mission.pillars.detection.desc')
     }
   ];
 

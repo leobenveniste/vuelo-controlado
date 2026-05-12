@@ -1,0 +1,251 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "mission": "Visión",
+    "projects": "Nuestro Trabajo",
+    "contact": "Contacto",
+    "donate": "Donar"
+  },
+  "hero": {
+    "title": "- riesgo + diversión",
+    "subtitle": "Promovemos la salud en espacios de ocio para que el público y las productoras cuenten con más y mejores herramientas de cuidado.",
+    "cta": "Nuestro Impacto",
+    "donate": "Apoyá nuestra misión",
+    "tags": "Reducción de riesgos y daños • Salud • Cuidado",
+    "pillars": {
+      "goals": { "title": "Salud Primero", "desc": "Promoviendo el bienestar y la reducción de riesgos en cada intervención." },
+      "community": { "title": "Espacio Seguro", "desc": "Creando entornos donde todos se sientan cuidados y respetados." },
+      "education": { "title": "Conciencia", "desc": "Empoderando a través de información científica y clara sobre riesgos." },
+      "impact": { "title": "Impacto Directo", "desc": "Asistencia inmediata y contención en el corazón de la fiesta." }
+    }
+  },
+  "mission": {
+    "title": "Dispositivo Soporte para Fiestas y Eventos",
+    "description": "Somos parte del sistema de salud de la fiesta, aportando una mirada estratégica para asistir desde la salud física y mental de acuerdo a la necesidad.",
+    "vision": {
+      "label": "Nuestra Visión",
+      "title": "Aumentar la concientización estimulando el cuidado entre todos.",
+      "paragraphs": [
+        "Las acciones y conceptos de Vuelo Controlado se sostienen en una perspectiva teórica de reducción de riesgos y daños, asumiendo como tal el desarrollo de estrategias de gestión de placeres y riesgos, ofreciendo información objetiva que facilite una toma de responsabilidad en la decisión de consumir o no, abordando el consumo desde una perspectiva preventiva.",
+        "La noción de reducción de riesgos hace referencia a un concepto de actuación pragmática para promover la salud respetando las diferencias de estilo de vida, sobre todo en términos de sexualidad y uso de drogas. Se trata de una apuesta por reducir los riesgos asociados a ciertos comportamientos y responsabilizar a las personas de sus decisiones. Este tipo de intervención se entiende como una prevención específica sobre un colectivo determinado y complementaria a la prevención primaria, no como opuesta a esta.",
+        "Entendemos que consumir drogas no es igual a tener problemas ni todas las formas de consumir son igual de problemáticas. Hay formas de consumo que entrañan pocos riesgos y otras extremadamente arriesgadas. Las drogas tienen efectos que son valorados por las personas que las consumen.",
+        "La experimentación de placer es una parte inherente a la mayoría de los consumos de drogas. La otra parte son los riesgos a los que el consumidor se expone y que pueden proceder de diversas fuentes: la propia persona, la sustancia que consume y el contexto en que lo hace. Así, una adecuada información (objetiva y sin elementos morales) es fundamental a la hora de decidir si consumir o no y, en caso de hacerlo, para poder evitar los riesgos asociados a su consumo."
+      ]
+    },
+    "pillars": {
+      "title": "Nuestros Pilares",
+      "health": {
+        "title": "Promoción y prevención de la salud",
+        "desc": "Facilitamos el acceso a información basada en evidencia científica que posibilite a los asistentes incrementar su percepción del riesgo asociado a todo consumo y la toma de responsabilidad en sus decisiones."
+      },
+      "recovery": {
+        "title": "Espacio de recuperación",
+        "desc": "Pensado y diseñado íntegramente para el bienestar de los asistentes, pudiendo acudir a el para descanso, abrigo, contención, hidratación."
+      },
+      "support": {
+        "title": "Acompañamiento específico",
+        "desc": "Brindado por nuestro staff especializado y dirigido a aquellos asistentes a eventos que pudiesen necesitar ayuda o contención."
+      },
+      "detection": {
+        "title": "Detección oportuna de posibles casos de riesgo",
+        "desc": "Trabajamos llevando asistencia a la pista de baile, de esta manera facilitamos el acceso del dispositivo a aquellas personas que puedan sentirse mal dentro de la misma."
+      }
+    },
+    "methodology": {
+      "title": "Metodología de Intervención",
+      "subtitle": "Implementamos dispositivos integrales que combinan logística, salud y educación.",
+      "steps": [
+        "DIAGNÓSTICO DE SITUACIÓN Y PLANIFICACIÓN DE LA ESTRATEGIA ESPECíFICA PARA CADA EVENTO.",
+        "Planificación en conjunto con la producción del evento del armado de la zona de recuperación siguiendo los criterios estéticos y técnicos necesarios.",
+        "Coordinamos acciones y modos de abordaje con otros sectores intervinientes (seguridad y servicio de ambulancias) para trabajar en conjunto.",
+        "IDENTIFICACIÓN DE POSIBLES CASOS DE RIESGO Y SITUACIONES PROBLEMÁTICAS.",
+        "Daremos contención psicológica y atención de cada caso mediante manejo de sintomatología. Los casos de mayor complejidad serán derivados al sistema sanitario provisto por la productora."
+      ],
+      "summary": "Estas acciones evitan el colapso de los sistemas más complejos de salud (enfermería, ambulancia, etc.)"
+    },
+    "stats": {
+      "hydration": "Hidratación Gratuita",
+      "founded": "Fundación",
+      "team": "Equipo Multidisciplinario",
+      "reduction": "Reducción de Daños"
+    }
+  },
+  "about": {
+    "label": "Nuestra Historia",
+    "title": "Cuidamos la Cultura.",
+    "story1": "Vuelo Controlado surge a fines del año 2016, partir de la tragedia acontecida en abril del mismo año, en la Ciudad de Buenos Aires en la fiesta electrónica Time Warp.",
+    "story2": "En este lamentable episodio, junto a otros como la tragedia de Cromagnon, quedó además demostrada la falta de conciencia de toda la cadena de responsables de este tipo de eventos, en cuanto a brindar ciertas garantías de salud, como el acceso libre al agua potable, decantada en este dramático final y por supuesto en las víctimas de siempre, los jóvenes.",
+    "story3": "Desde ese momento y hasta ahora, distintos entes relacionados a los eventos de música electrónica hemos mancomunado esfuerzos para colaborar desde cada ámbito de saber para generar espacios de Prevención y Promoción de la Salud en materia de autocuidado y cuidado de otros en relación al consumo de sustancias legales e ilegales y la sexualidad principalmente.",
+    "stats": {
+      "care": "Cuidado No Punitivo",
+      "events": "Eventos Cuidados",
+      "volunteers": "Voluntarios Activos"
+    },
+    "values": {
+      "health": "Salud",
+      "science": "Ciencia",
+      "impact": "Impacto",
+      "network": "Red"
+    },
+    "team": {
+      "title": "Equipo Multidisciplinario",
+      "subtitle": "El equipo de trabajo de Vuelo Controlado se encuentra conformado de manera multidisciplinaria. Cuenta con profesionales de la salud mental, estudiantes avanzados, artistas, diseñadores, profesionales de higiene y seguridad, etc, sensibles a la problemática y con experiencia en nocturnidad, con entrenamiento y formación en el área de consumo, recreativo o problemático y con un perfil empático y solidario.",
+      "veronica": { "name": "Veronica Chrabolowsky", "role": "Fundadora y Directora" },
+      "paula": { "name": "Paula Vera", "role": "Comunicación y Prensa" },
+      "evan": { "name": "Evan Morris", "role": "Producción y Recursos Humanos" }
+    }
+  },
+  "projects": {
+    "title": "Nuestro Trabajo",
+    "subtitle": "Somos parte del sistema de salud en los festivales más importantes de la región.",
+    "items": {
+      "hydration": {
+        "title": "Puntos de hidratación",
+        "desc": "Diseño de puestos acordes al evento desde una lógica situacional."
+      },
+      "rest": {
+        "title": "Espacio de Recuperación",
+        "desc": "Áreas diseñadas para la recuperación física y mental en entornos de alta estimulación. Se configuran en total armonía con el entorno del evento, creando un continuo comunicacional entre los distintos actores concurrentes y participantes, desde la estética, el trato humano, la sensibilidad y la comprensión de problemáticas asociadas."
+      },
+      "staff": {
+        "title": "Nuestro Staff",
+        "desc": "Manejo logístico y técnico del dispositivo, brindar información clara y concisa en materia de consumo, hacer de nexo y mediatizar en la relación de los distintos actores que participan en el evento facilitar el pedido de ayuda tan dificultado en estas situaciones y realizar apoyo psicológico de ser necesario."
+      },
+      "track": {
+        "title": "Intervención en pista",
+        "desc": "Nuestro staff además circula, debidamente identificado, por el evento y la pista de baile, a fin de desenvolver su rol activamente y acercar la ayuda a quienes la requieran y la acepten, con el objetivo de encontrarse en continuo contacto con los asistentes y sus necesidades."
+      }
+    },
+    "learnMore": "Saber más"
+  },
+  "contact": {
+    "label": "Hablemos",
+    "title": "Ponete en contacto",
+    "subtitle": "¿Querés que Vuelo Controlado esté en tu evento? ¿O sumarte como voluntario?",
+    "info": {
+      "write": "Escríbinos",
+      "follow": "Seguinos",
+      "location": "Ubicación"
+    },
+    "channels": {
+      "prensa": "Prensa",
+      "rrhh": "RRHH",
+      "instagram": "Instagram"
+    },
+    "events": {
+      "title": "Eventos",
+      "desc": "Si sos productor/a y querés que Vuelo Controlado esté en tu evento, solicitar un presupuesto o contactate con nuestro equipo de producción.",
+      "cta": "Contacto Producción",
+      "quote": "Solicitar Presupuesto"
+    },
+    "schools": {
+      "title": "Escuelas y Universidades",
+      "desc": "Si sos estudiante o docente y querés que Vuelo Controlado participe en alguna actividad de tu institución contactanos. Llevamos nuestros dispositivos de reducción de riesgos e información profesional a donde más se necesita.",
+      "cta": "Contacto Producción"
+    },
+    "volunteer": {
+      "title": "Sumate",
+      "desc": "Completá el formulario para sumarte como voluntario.",
+      "success": "¡Solicitud enviada!",
+      "successDesc": "Te responderemos pronto.",
+      "placeholderMsg": "¿Por qué te gustaría sumarte?",
+      "submit": "Enviar Solicitud",
+      "loading": "Enviando..."
+    },
+    "organizer": {
+      "title": "¿Sos organizador?",
+      "desc": "Ofrecemos diagnósticos personalizados para cada tipo de evento cultural o de entretenimiento.",
+      "cta": "Solicitar Presupuesto"
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Correo Electrónico",
+      "city": "Ciudad de Residencia",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje",
+      "placeholderName": "Tu nombre",
+      "placeholderEmail": "tu@email.com",
+      "placeholderCity": "Mendoza, Argentina",
+      "placeholderMsg": "Contanos sobre tu consulta..."
+    }
+  },
+  "quote": {
+    "title": "Pedir Presupuesto",
+    "subtitle": "Contanos sobre tu evento para recibir una propuesta personalizada.",
+    "form": {
+      "productora": "Productora / Organizador",
+      "city": "Ciudad / Provincia",
+      "eventName": "Nombre del Evento / DJ Principal",
+      "date": "Fecha",
+      "openTime": "Horario de Apertura",
+      "closeTime": "Horario de Cierre",
+      "location": "Locación: Nombre, espacio cerrado/abierto/ambos",
+      "attendance": "Cantidad estimada de asistentes (Min/max)",
+      "healthSystem": {
+        "label": "¿Cuál será el sistema de salud?",
+        "ambulance": "Ambulancia",
+        "post": "Puesto Sanitario",
+        "nursing": "Enfermería",
+        "vuelo": "Vuelo Controlado gestiona",
+        "other": "Otro"
+      },
+      "hydration": {
+        "label": "¿Contará con puestos gratuitos de hidratación?",
+        "yes": "Sí",
+        "no": "No"
+      },
+      "contact": "Nombre y teléfono de contacto",
+      "extra": "¿Querés contarnos algo más sobre el evento?",
+      "submit": "Enviar pedido de presupuesto",
+      "loading": "Enviando...",
+      "success": "¡Pedido Recibido!",
+      "successDesc": "Analizaremos tu evento y nos pondremos en contacto pronto con una propuesta."
+    }
+  },
+  "donate": {
+    "title": "Apoyá nuestra misión",
+    "subtitle": "Tu contribución apoya directamente nuestra misión de promover la salud y el cuidado en eventos culturales.",
+    "intro": "En Fundación Vuelo Controlado, pensamos que la fiesta debe ser un espacio de disfrute, libertad y, sobre todo, bienestar. Desde hace años, nuestro equipo recorre las pistas de Argentina para transformar la nocturnidad en un entorno más seguro, creando espacios de recuperación y brindando información y asistencia profesional sin prejuicios.",
+    "whyTitle": "¿Por qué necesitamos tu apoyo?",
+    "whyDesc": "Para que nuestro trabajo siga siendo independiente y profesional, lanzamos la Comunidad de Vuelo. Con tu donación mensual, nos ayudás a sostener e impulsar tres pilares fundamentales:",
+    "pillars": {
+      "interventions": {
+        "title": "Más intervenciones",
+        "desc": "Para llevar nuestros dispositivos de reducción de daños a cada vez más puntos del país."
+      },
+      "research": {
+        "title": "Investigación Científica",
+        "desc": "Generar datos locales sobre consumos en Argentina para diseñar mejores intervenciones y proponer nuevas estrategias en materia de salud pública."
+      },
+      "training": {
+        "title": "Formación Continua",
+        "desc": "Fortalecer la formación de nuestros voluntarios y profesionales para brindarte la mejor asistencia en la pista y fuera de ella."
+      }
+    },
+    "impactTitle": "Tu impacto es real",
+    "impactDesc": "¿Sabías que tu aporte mensual equivale aproximadamente al valor de una botella de agua en una fiesta? Con ese pequeño gesto, vos hacés posible que estemos presentes en el próximo evento, cuidándote a vos, a tus amigos y a tus amigas.",
+    "sumate": "Sumate hoy a la Comunidad de Vuelo. Porque la fiesta se disfruta más cuando nos cuidamos entre todos.",
+    "thanks": "¡Gracias por sumarte a esta comunidad!",
+    "select": "Seleccioná el monto",
+    "custom": "Monto personalizado",
+    "btn": "Donar ${{amount}} ahora",
+    "secure": "Pago Seguro",
+    "impact": "Impacto Inmediato",
+    "transparency": "Transparencia"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "tagline": "Promoviendo la salud y el cuidado en eventos culturales.",
+    "nav": "Navegación",
+    "contact": "Contacto",
+    "newsletter": {
+      "title": "Newsletter",
+      "desc": "Sumate para recibir información sobre cuidado y salud.",
+      "placeholder": "Email",
+      "btn": "OK"
+    },
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  }
+}

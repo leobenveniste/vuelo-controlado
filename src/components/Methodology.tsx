@@ -44,12 +44,20 @@ const Methodology: React.FC = () => {
           </p>
           <div className="space-y-4">
             {(t('mission.methodology.steps', { returnObjects: true }) as string[]).map((step, i) => (
-              <div key={i} className="flex items-center space-x-3">
-                <CheckCircle2 className="text-primary-500 flex-shrink-0" size={24} />
+              <div key={i} className="flex items-start space-x-3">
+                <CheckCircle2 className="text-primary-500 flex-shrink-0 mt-1" size={20} />
                 <span className="text-lg text-slate-700 dark:text-slate-300 font-medium">{step}</span>
               </div>
             ))}
           </div>
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            className="mt-10 p-6 bg-primary-500/10 border-l-4 border-primary-500 text-slate-900 dark:text-white font-bold rounded-r-2xl"
+          >
+            {t('mission.methodology.summary')}
+          </motion.p>
         </motion.div>
       </div>
     </section>
