@@ -29,20 +29,24 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-6xl md:text-8xl font-display font-black text-slate-900 dark:text-white leading-[0.9] mb-10 tracking-tighter"
+            className="text-6xl md:text-8xl font-display font-black text-slate-900 dark:text-white leading-[0.9] mb-10 tracking-tighter flex flex-wrap justify-center items-center gap-x-4 gap-y-2"
           >
-            {t('hero.title').split(' ').map((word: string, i: number) => {
-              const cleanWord = word.replace(/[.,+-]/g, '').toLowerCase();
-              const isTarget = ['riesgo', 'diversión', 'diversion', 'risk', 'fun'].includes(cleanWord);
-              return (
-                <span 
-                  key={i} 
-                  className={isTarget ? 'text-primary-500 bg-slate-900 dark:bg-black/40 px-4 py-1 rounded-2xl inline-block mx-1 my-1' : ''}
-                >
-                  {word}{' '}
-                </span>
-              );
-            })}
+            <span className="flex items-center whitespace-nowrap">
+              <span>-</span>
+              <span className="text-primary-500 bg-slate-900 dark:bg-black/40 px-4 py-1 rounded-2xl inline-block mx-2 my-1">
+                {t('hero.title').toLowerCase().includes('risk') ? 'risk' : 'riesgo'}
+              </span>
+            </span>
+            
+            {/* Force break on mobile */}
+            <div className="basis-full h-0 md:hidden" />
+
+            <span className="flex items-center whitespace-nowrap">
+              <span>+</span>
+              <span className="text-primary-500 bg-slate-900 dark:bg-black/40 px-4 py-1 rounded-2xl inline-block mx-2 my-1">
+                {t('hero.title').toLowerCase().includes('fun') ? 'fun' : 'diversión'}
+              </span>
+            </span>
           </motion.h1>
 
           <motion.p
