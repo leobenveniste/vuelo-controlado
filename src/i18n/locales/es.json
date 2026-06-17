@@ -246,6 +246,14 @@
       "btn": "OK"
     },
     "privacy": "Privacidad",
-    "terms": "Términos"
+    "terms": "Términos",
+    "legal": {
+      "denominationLabel": "Denominación:",
+      "denominationValue": "FUNDACION VUELO CONTROLADO",
+      "cuitLabel": "CUIT:",
+      "cuitValue": "30-71792815-2",
+      "addressLabel": "Dirección:",
+      "addressValue": "AYACUCHO 250 of. 25. Mendoza Ciudad. CP5500"
+    }
   }
 }

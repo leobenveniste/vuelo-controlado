@@ -12,13 +12,27 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-8 items-start">
           {/* Logo - Left */}
-          <div className="flex justify-center md:justify-start">
+          <div className="flex flex-col items-center md:items-start space-y-6">
             <div className="h-12">
               <img 
                 src={theme === 'dark' ? '/logo_blanco.png?v=1' : '/logo.png?v=1'} 
                 alt="Logo" 
                 className="h-full w-auto object-contain" 
               />
+            </div>
+            <div className="text-center md:text-left text-xs text-slate-600 dark:text-slate-400 space-y-2">
+              <p>
+                <span className="font-bold text-slate-800 dark:text-slate-200">{t('footer.legal.denominationLabel')}</span>{' '}
+                <span>{t('footer.legal.denominationValue')}</span>
+              </p>
+              <p>
+                <span className="font-bold text-slate-800 dark:text-slate-200">{t('footer.legal.cuitLabel')}</span>{' '}
+                <span>{t('footer.legal.cuitValue')}</span>
+              </p>
+              <p className="leading-relaxed">
+                <span className="font-bold text-slate-800 dark:text-slate-200">{t('footer.legal.addressLabel')}</span>{' '}
+                <span>{t('footer.legal.addressValue')}</span>
+              </p>
             </div>
           </div>
 
