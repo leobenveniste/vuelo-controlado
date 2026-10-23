@@ -196,6 +196,12 @@
         "no": "No"
       },
       "contact": "Contact Name and Phone",
+      "name": "Full Name",
+      "phone": "Phone / WhatsApp",
+      "email": "Email Address",
+      "placeholderName": "e.g. John Doe",
+      "placeholderPhone": "e.g. +1 555 123-4567",
+      "placeholderEmail": "your@email.com",
       "extra": "Tell us more about the event",
       "submit": "Send Quote Request",
       "loading": "Sending...",

@@ -196,6 +196,12 @@
         "no": "No"
       },
       "contact": "Nombre y teléfono de contacto",
+      "name": "Nombre y Apellido",
+      "phone": "Teléfono / WhatsApp",
+      "email": "Correo Electrónico",
+      "placeholderName": "Ej. Juan Pérez",
+      "placeholderPhone": "Ej. +54 9 261 123-4567",
+      "placeholderEmail": "tu@email.com",
       "extra": "¿Querés contarnos algo más sobre el evento?",
       "submit": "Enviar pedido de presupuesto",
       "loading": "Enviando...",

@@ -81,6 +81,12 @@ const QuotePage: React.FC = () => {
     
     const form = e.currentTarget;
     const data = new FormData(form);
+    const nombre = (data.get('nombre') as string) || '';
+    const telefono = (data.get('telefono') as string) || '';
+    const email = (data.get('email') as string) || '';
+
+    // Compatibilidad con Google Sheets y scripts que aún lean el campo consolidado 'contacto'
+    data.set('contacto', `${nombre} - Tel: ${telefono} - Email: ${email}`);
     // Add target email to formData if backend supports it, or it's hardcoded in the script
     data.append('target_email', 'produccion@vuelocontrolado.org');
 
@@ -361,10 +367,22 @@ const QuotePage: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Contacto */}
+                {/* Nombre y Apellido */}
+                <div className="flex flex-col">
+                  <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-3 min-h-[2.5rem] flex items-end">{t('quote.form.name')}</label>
+                  <input required name="nombre" type="text" className="input-field" placeholder={t('quote.form.placeholderName')} />
+                </div>
+
+                {/* Teléfono / WhatsApp */}
+                <div className="flex flex-col">
+                  <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-3 min-h-[2.5rem] flex items-end">{t('quote.form.phone')}</label>
+                  <input required name="telefono" type="tel" className="input-field" placeholder={t('quote.form.placeholderPhone')} />
+                </div>
+
+                {/* Email */}
                 <div className="md:col-span-2 flex flex-col">
-                  <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-3 min-h-[2.5rem] flex items-end">{t('quote.form.contact')}</label>
-                  <input required name="contacto" type="text" className="input-field" />
+                  <label className="block text-xs font-black text-slate-500 uppercase tracking-widest mb-3 min-h-[2.5rem] flex items-end">{t('quote.form.email')}</label>
+                  <input required name="email" type="email" className="input-field" placeholder={t('quote.form.placeholderEmail')} />
                 </div>
 
                 {/* Extra */}
